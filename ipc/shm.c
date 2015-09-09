@@ -160,6 +160,10 @@ static inline struct shmid_kernel *shm_lock(struct ipc_namespace *ns, int id)
 	 * ID is busted.
 	 */
 
+/*
+ * I removed dublicated WARN_ON(IS_ERR_(ipcp)); - felix-development
+ */
+
 	WARN_ON(IS_ERR(ipcp));
 
     return container_of(ipcp, struct shmid_kernel, shm_perm);
