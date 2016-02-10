@@ -585,6 +585,9 @@ static void dwc_handle_cyclic(struct dw_dma *dw, struct dw_dma_chan *dwc,
 
 		spin_unlock_irqrestore(&dwc->lock, flags);
 	}
+
+	/* Re-enable interrupts */
+	channel_set_bit(dw, MASK.BLOCK, dwc->mask);
 }
 
 /* ------------------------------------------------------------------------- */
@@ -612,9 +615,7 @@ static void dw_dma_tasklet(unsigned long data)
 			dwc_scan_descriptors(dw, dwc);
 	}
 
-	/*
-	 * Re-enable interrupts.
-	 */
+	/* Re-enable interrupts */
 	channel_set_bit(dw, MASK.XFER, dw->all_chan_mask);
 	channel_set_bit(dw, MASK.ERROR, dw->all_chan_mask);
 }
@@ -1245,8 +1246,8 @@ static void dwc_free_chan_resources(struct dma_chan *chan)
 int dw_dma_cyclic_start(struct dma_chan *chan)
 {
 	struct dw_dma_chan	*dwc = to_dw_dma_chan(chan);
-	struct dw_dma		*dw = to_dw_dma(dwc->chan.device);
-	unsigned long		flags;
+    struct dw_dma		*dw  = to_dw_dma(chan->device);
+    unsigned long		flags;
 
 	if (!test_bit(DW_DMA_IS_CYCLIC, &dwc->flags)) {
 		dev_err(chan2dev(&dwc->chan), "missing prep for cyclic DMA\n");
@@ -1274,6 +1275,11 @@ int dw_dma_cyclic_start(struct dma_chan *chan)
 	channel_writel(dwc, CTL_HI, 0);
 
 	channel_set_bit(dw, CH_EN, dwc->mask);
+
+	/* Enable interrupts to perform cyclic transfer */
+	channel_set_bit(dw, MASK.BLOCK, dwc->mask);
+
+	dwc_dostart(dwc, dwc->cdesc->desc[0]);
 
 	spin_unlock_irqrestore(&dwc->lock, flags);
 
