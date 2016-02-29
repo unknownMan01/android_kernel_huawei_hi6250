@@ -362,7 +362,6 @@ static void dentry_unlink_inode(struct dentry * dentry)
 	__d_clear_type_and_inode(dentry);
 	hlist_del_init(&dentry->d_u.d_alias);
 	raw_write_seqcount_end(&dentry->d_seq);
-	dentry_rcuwalk_invalidate(dentry);
 	spin_unlock(&dentry->d_lock);
 	spin_unlock(&inode->i_lock);
 	if (!inode->i_nlink)
@@ -1750,7 +1749,6 @@ static void __d_instantiate(struct dentry *dentry, struct inode *inode)
 	raw_write_seqcount_begin(&dentry->d_seq);
 	__d_set_inode_and_type(dentry, inode, add_flags);
 	raw_write_seqcount_end(&dentry->d_seq);
-	dentry_rcuwalk_invalidate(dentry);
 	spin_unlock(&dentry->d_lock);
 	fsnotify_d_instantiate(dentry, inode);
 }
