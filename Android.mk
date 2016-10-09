@@ -5,7 +5,7 @@ COMMON_HEAD := $(shell pwd)/kernel/drivers/
 COMMON_HEAD += $(shell pwd)/kernel/mm/
 COMMON_HEAD += $(shell pwd)/kernel/include/hisi/
 COMMON_HEAD += $(shell pwd)/external/efipartition	
-
+COMMON_HEAD += $(shell pwd)/drivers/vendor/hisi/ap/platform/hi6250/
 
 ifneq ($(COMMON_HEAD),)
 BALONG_INC := $(patsubst %,-I%,$(COMMON_HEAD))
