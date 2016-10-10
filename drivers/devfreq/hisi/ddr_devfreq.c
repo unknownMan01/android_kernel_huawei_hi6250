@@ -416,7 +416,7 @@ static int ddr_devfreq_probe(struct platform_device *pdev)
 		rcu_read_unlock();
 		ddev->devfreq = devfreq_add_device(&pdev->dev,
 					&ddr_devfreq_dev_profile,
-					"pm_qos",
+					"mali_ondemand",
 					ddata);
 	}
 
