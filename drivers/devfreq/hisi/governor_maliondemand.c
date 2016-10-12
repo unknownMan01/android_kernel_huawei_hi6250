@@ -110,7 +110,11 @@ static int devfreq_mali_ondemand_func(struct devfreq *df,
 	    dfso_upthreshold < dfso_downdifferential) {
 		pr_err("%s: invalid performance parameter, upth[%d], diff[%d]\n",
 			__func__, dfso_upthreshold, dfso_downdifferential);
-		return -EINVAL;
+		data->vsync_upthreshold = DFMO_VSYNC_UPTHRESHOLD;
+		data->vsync_downdifferential = DFMO_VSYNC_DOWNDIFFERENCTIAL;
+		data->no_vsync_upthreshold = DFMO_VSYNC_UPTHRESHOLD;
+		data->no_vsync_downdifferential = DFMO_VSYNC_DOWNDIFFERENCTIAL;
+		pr_err("Meticulus: reset performance parameters to default\n");
 	}
 
 	/* Assume MAX if it is going to be divided by zero  &&
