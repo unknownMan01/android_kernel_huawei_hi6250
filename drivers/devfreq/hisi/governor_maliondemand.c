@@ -114,6 +114,13 @@ static int devfreq_mali_ondemand_func(struct devfreq *df,
 		data->vsync_downdifferential = DFMO_VSYNC_DOWNDIFFERENCTIAL;
 		data->no_vsync_upthreshold = DFMO_NO_VSYNC_UPTHRESHOLD;
 		data->no_vsync_downdifferential = DFMO_NO_VSYNC_DOWNDIFFERENCTIAL;
+		if (data->vsync) {
+			dfso_upthreshold = data->vsync_upthreshold;
+			dfso_downdifferential = data->vsync_downdifferential;
+		} else {
+			dfso_upthreshold = data->no_vsync_upthreshold;
+			dfso_downdifferential = data->no_vsync_downdifferential;
+		}
 		pr_err("Meticulus: reset performance parameters to default\n");
 	}
 
