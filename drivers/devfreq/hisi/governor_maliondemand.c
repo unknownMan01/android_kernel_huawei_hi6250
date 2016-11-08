@@ -110,8 +110,8 @@ static int devfreq_mali_ondemand_func(struct devfreq *df,
 	    dfso_upthreshold < dfso_downdifferential) {
 		pr_err("%s: invalid performance parameter, upth[%d], diff[%d]\n",
 			__func__, dfso_upthreshold, dfso_downdifferential);
-		data->vsync_upthreshold = DFMO_VSYNC_UPTHRESHOLD;
-		data->vsync_downdifferential = DFMO_VSYNC_DOWNDIFFERENCTIAL;
+		data->vsync_upthreshold = DFMO_NO_VSYNC_UPTHRESHOLD;
+		data->vsync_downdifferential = DFMO_NO_VSYNC_DOWNDIFFERENCTIAL;
 		data->no_vsync_upthreshold = DFMO_NO_VSYNC_UPTHRESHOLD;
 		data->no_vsync_downdifferential = DFMO_NO_VSYNC_DOWNDIFFERENCTIAL;
 		if (data->vsync) {
