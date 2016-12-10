@@ -373,15 +373,8 @@ int hisi_ov_online_play(struct hisi_fb_data_type *hisifd, void __user *argp)
 	INIT_LIST_HEAD(&lock_list);
 
 	if (!hisifd->panel_power_on) {
-		HISI_FB_INFO("Meticulus: fb%d, panel is power off! Attempting to power on!\n", hisifd->index);
-                ret = hisifd->on_fnc(hisifd);
-                if (ret == 0) { 
-		    HISI_FB_INFO("Meticulus fb%d, panel power on success!\n", hisifd->index);
-                    hisifd->panel_power_on = true;
-                } else {		
-		    HISI_FB_INFO("Meticulus fb%d, panel power on failed!\n", hisifd->index);
-		    return 0;
-		}
+		HISI_FB_INFO("fb%d, panel is power off!\n", hisifd->index);
+		return 0;
 	}
 
 	if (g_debug_ldi_underflow) {
