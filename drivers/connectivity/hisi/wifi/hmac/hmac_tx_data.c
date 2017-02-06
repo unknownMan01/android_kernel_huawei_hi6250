@@ -646,10 +646,13 @@ OAL_STATIC OAL_INLINE oal_void hmac_tx_update_tid(oal_bool_enum_uint8  en_wmm, o
 
 #if (_PRE_PRODUCT_ID == _PRE_PRODUCT_ID_HI1102_HOST)
 
-oal_uint8 hmac_tx_wmm_acm(oal_bool_enum_uint8  en_wmm, hmac_vap_stru *pst_hmac_vap, oal_uint8 *puc_tid)
+oal_uint8 hmac_tx_wmm_acm(oal_bool_enum_uint8  en_wmm, hmac_vap_stru *pst_hmac_vap1, oal_uint8 *puc_tid)
 {
     oal_uint8                   uc_ac;
     oal_uint8                   uc_ac_new;
+    hmac_vap_stru		*pst_hmac_vap = (hmac_vap_stru *)pst_hmac_vap1;
+    mac_vap_stru		svbi = pst_hmac_vap->st_vap_base_info;
+    wlan_mib_ieee802dot11_stru	*pmi = svbi.pst_mib_info;
 
     if ((OAL_PTR_NULL == pst_hmac_vap) || (OAL_PTR_NULL == puc_tid))
     {
@@ -663,8 +666,10 @@ oal_uint8 hmac_tx_wmm_acm(oal_bool_enum_uint8  en_wmm, hmac_vap_stru *pst_hmac_v
 
     uc_ac = WLAN_WME_TID_TO_AC(*puc_tid);
     uc_ac_new = uc_ac;
-    while ((uc_ac_new != WLAN_WME_AC_BK) && (OAL_TRUE == pst_hmac_vap->st_vap_base_info.pst_mib_info->st_wlan_mib_qap_edac[uc_ac_new].en_dot11QAPEDCATableMandatory))
+    while ((uc_ac_new != WLAN_WME_AC_BK) && (pmi->st_wlan_mib_qap_edac[uc_ac_new].en_dot11QAPEDCATableMandatory == OAL_TRUE))
     {
+	svbi = pst_hmac_vap->st_vap_base_info;
+	pmi = svbi.pst_mib_info;
         switch (uc_ac_new)
         {
             case WLAN_WME_AC_VO:
