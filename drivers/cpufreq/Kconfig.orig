@@ -54,12 +54,6 @@ choice
 	  This option sets which CPUFreq governor shall be loaded at
 	  startup. If in doubt, select 'performance'.
 
-config CPU_FREQ_DEFAULT_GOV_ONDEMANDPLUS
-	bool "ondemandplus"
-	select CPU_FREQ_GOV_ONDEMANDPLUS
-	help
-	USE THE CPUFreq governor 'ondemandplus' as default
-
 config CPU_FREQ_DEFAULT_GOV_INTELLIACTIVE
 	bool "intelliactive"
 	select CPU_FREQ_GOV_INTELLIACTIVE
@@ -190,13 +184,8 @@ config CPU_FREQ_GOV_ZZMOOVE
 	  % frequency steps to get smooth up/downscaling dependant on CPU load.
 	  If in doubt, say N.
 
-config CPU_FREQ_GOV_ONDEMANDPLUS
-	tristate "'ondemandplus' cpufreq governor"
-	depends on CPU_FREQ
-
 config CPU_FREQ_GOV_INTELLIACTIVE
 	tristate "'intelliactive' cpufreq governor"
-	depends on CPU_FREQ
 
 config CPU_FREQ_GOV_CONSERVATIVEX
 	tristate "'conservativex' cpufreq governor"

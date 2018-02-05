@@ -1,0 +1,10 @@
+--- drivers/cpufreq/Kconfig
++++ drivers/cpufreq/Kconfig
+@@ -81,7 +87,6 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVEX
+ 	  loading your cpufreq low-level hardware driver, using the
+ 	  'interactiveX' governor for latency-sensitive workloads.
+ 
+-
+ config CPU_FREQ_DEFAULT_GOV_SMARTMAX_EPS
+         bool "smartmax_eps"
+         select CPU_FREQ_GOV_SMARTMAX_EPS
