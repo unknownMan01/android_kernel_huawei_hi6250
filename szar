@@ -1,0 +1,2210 @@
+make[1]: Entering directory '/home/petya230/kernel/out'
+  GEN     /home/petya230/kernel/out/Makefile
+scripts/kconfig/conf  --silentoldconfig Kconfig
+block/Kconfig.iosched:71:warning: choice value used outside its choice group
+block/Kconfig.iosched:74:warning: choice value used outside its choice group
+block/Kconfig.iosched:84:warning: choice value used outside its choice group
+block/Kconfig.iosched:87:warning: choice value used outside its choice group
+drivers/mmc/host/Kconfig:601:warning: multi-line strings not supported
+  CHK     include/config/kernel.release
+  GEN     /home/petya230/kernel/out/Makefile
+  WRAP    arch/arm64/include/generated/asm/bugs.h
+  WRAP    arch/arm64/include/generated/asm/clkdev.h
+  WRAP    arch/arm64/include/generated/asm/bug.h
+  WRAP    arch/arm64/include/generated/asm/checksum.h
+  WRAP    arch/arm64/include/generated/asm/current.h
+  WRAP    arch/arm64/include/generated/asm/delay.h
+  WRAP    arch/arm64/include/generated/asm/dma.h
+  WRAP    arch/arm64/include/generated/asm/dma-contiguous.h
+  WRAP    arch/arm64/include/generated/asm/early_ioremap.h
+  WRAP    arch/arm64/include/generated/asm/emergency-restart.h
+  CHK     include/generated/uapi/linux/version.h
+  WRAP    arch/arm64/include/generated/asm/div64.h
+  WRAP    arch/arm64/include/generated/asm/errno.h
+  WRAP    arch/arm64/include/generated/asm/cputime.h
+  WRAP    arch/arm64/include/generated/asm/ftrace.h
+  WRAP    arch/arm64/include/generated/asm/hw_irq.h
+  UPD     include/generated/uapi/linux/version.h
+  WRAP    arch/arm64/include/generated/asm/ioctl.h
+  WRAP    arch/arm64/include/generated/asm/ipcbuf.h
+  WRAP    arch/arm64/include/generated/asm/irq_regs.h
+  WRAP    arch/arm64/include/generated/asm/kdebug.h
+  WRAP    arch/arm64/include/generated/asm/kmap_types.h
+  WRAP    arch/arm64/include/generated/asm/kvm_para.h
+  WRAP    arch/arm64/include/generated/asm/local.h
+  WRAP    arch/arm64/include/generated/asm/ioctls.h
+  WRAP    arch/arm64/include/generated/asm/local64.h
+  WRAP    arch/arm64/include/generated/asm/mman.h
+  WRAP    arch/arm64/include/generated/asm/mcs_spinlock.h
+  WRAP    arch/arm64/include/generated/asm/msi.h
+  WRAP    arch/arm64/include/generated/asm/mutex.h
+  WRAP    arch/arm64/include/generated/asm/poll.h
+  WRAP    arch/arm64/include/generated/asm/preempt.h
+  WRAP    arch/arm64/include/generated/asm/msgbuf.h
+  WRAP    arch/arm64/include/generated/asm/pci-bridge.h
+  WRAP    arch/arm64/include/generated/asm/resource.h
+  WRAP    arch/arm64/include/generated/asm/rwsem.h
+  WRAP    arch/arm64/include/generated/asm/sections.h
+  WRAP    arch/arm64/include/generated/asm/segment.h
+  WRAP    arch/arm64/include/generated/asm/pci.h
+  WRAP    arch/arm64/include/generated/asm/scatterlist.h
+  WRAP    arch/arm64/include/generated/asm/serial.h
+  WRAP    arch/arm64/include/generated/asm/socket.h
+  WRAP    arch/arm64/include/generated/asm/shmbuf.h
+  WRAP    arch/arm64/include/generated/asm/simd.h
+  WRAP    arch/arm64/include/generated/asm/sockios.h
+  WRAP    arch/arm64/include/generated/asm/sembuf.h
+  WRAP    arch/arm64/include/generated/asm/swab.h
+  WRAP    arch/arm64/include/generated/asm/termbits.h
+  WRAP    arch/arm64/include/generated/asm/switch_to.h
+  WRAP    arch/arm64/include/generated/asm/types.h
+  WRAP    arch/arm64/include/generated/asm/unaligned.h
+  WRAP    arch/arm64/include/generated/asm/trace_clock.h
+  WRAP    arch/arm64/include/generated/asm/sizes.h
+  WRAP    arch/arm64/include/generated/asm/topology.h
+  WRAP    arch/arm64/include/generated/asm/user.h
+  WRAP    arch/arm64/include/generated/asm/vga.h
+  WRAP    arch/arm64/include/generated/asm/xor.h
+  WRAP    arch/arm64/include/generated/asm/termios.h
+  WRAP    arch/arm64/include/generated/uapi/asm/kvm_para.h
+find tpkit hisi adapter folder, include it now!
+find lcdkit hisi folder, include it now!
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/wifi/Makefile:2: HI1102_DRIVER_BUILTIN_PATH drivers/connectivity/hisi
+  UPD     include/config/kernel.release
+  Using /home/petya230/kernel/android_kernel_huawei_hi6250 as source for kernel
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+  HOSTCC  scripts/dtc/dtc.o
+  HOSTCC  scripts/dtc/flattree.o
+  HOSTCC  scripts/dtc/fstree.o
+  HOSTCC  scripts/dtc/data.o
+  HOSTCC  scripts/dtc/livetree.o
+  HOSTCC  scripts/dtc/treesource.o
+  HOSTCC  scripts/dtc/srcpos.o
+  HOSTCC  scripts/dtc/checks.o
+  SHIPPED scripts/dtc/dtc-lexer.lex.c
+  HOSTCC  scripts/dtc/util.o
+  SHIPPED scripts/dtc/dtc-parser.tab.h
+  SHIPPED scripts/dtc/dtc-parser.tab.c
+  HOSTCC  scripts/dtc/dtc-lexer.lex.o
+  HOSTCC  scripts/dtc/dtc-parser.tab.o
+  HOSTLD  scripts/dtc/dtc
+  CC      scripts/mod/empty.o
+  HOSTCC  scripts/mod/mk_elfconfig
+  CC      scripts/mod/devicetable-offsets.s
+  HOSTCC  scripts/selinux/genheaders/genheaders
+  HOSTCC  scripts/selinux/mdp/mdp
+  GEN     scripts/mod/devicetable-offsets.h
+  MKELF   scripts/mod/elfconfig.h
+  HOSTCC  scripts/sortextable
+  HOSTCC  scripts/kallsyms
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTCC  scripts/mod/modpost.o
+  HOSTCC  scripts/mod/sumversion.o
+  CC      kernel/bounds.s
+  CHK     include/generated/bounds.h
+  UPD     include/generated/bounds.h
+  CC      arch/arm64/kernel/asm-offsets.s
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/kvm_asm.h:21:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/kvm_host.h:28,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/kvm_host.h:34,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/kernel/asm-offsets.c:24:
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:77:0: warning: "HVC_GET_VECTORS" redefined
+ #define HVC_GET_VECTORS 0
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:38:0: note: this is the location of the previous definition
+ #define HVC_GET_VECTORS 1
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:84:0: warning: "HVC_SET_VECTORS" redefined
+ #define HVC_SET_VECTORS 1
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:46:0: note: this is the location of the previous definition
+ #define HVC_SET_VECTORS 2
+ ^
+  CHK     include/generated/asm-offsets.h
+  UPD     include/generated/asm-offsets.h
+  CALL    /home/petya230/kernel/android_kernel_huawei_hi6250/scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_DSDS_config.dtb
+  DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_SRLTE_config.dtb
+  DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_default_config.dtb
+  DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_noRF_config.dtb
+  DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_6555codec_noRF_config.dtb
+  DTC     arch/arm64/boot/dts/auto-generate/hi6250_hi6250_fpga_config.dtb
+  DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_6555codec_config.dtb
+  DTC     arch/arm64/boot/dts/auto-generate/hi6250_emulator_config.dtb
+  HOSTCC  usr/gen_init_cpio
+  CC      init/main.o
+  CC      init/do_mounts.o
+  CHK     include/generated/compile.h
+  CC      arch/arm64/mm/dma-mapping.o
+  LD      arch/arm64/net/built-in.o
+  UPD     include/generated/compile.h
+  CC      init/do_mounts_rd.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/mm/dma-mapping.c:870:13: warning: '__iommu_setup_dma_ops' defined but not used [-Wunused-function]
+ static void __iommu_setup_dma_ops(struct device *dev, u64 dma_base, u64 size,
+             ^
+  CC      arch/arm64/crypto/sha1-ce-glue.o
+  GEN     usr/initramfs_data.cpio.gz
+  CC      arch/arm64/mm/extable.o
+  AS      usr/initramfs_data.o
+  CC      init/do_mounts_initrd.o
+  LDS     arch/arm64/kernel/vdso/vdso.lds
+  VDSOA   arch/arm64/kernel/vdso/gettimeofday.o
+  CC      arch/arm64/mm/fault.o
+  LD      usr/built-in.o
+  CC      init/noinitramfs.o
+  VDSOA   arch/arm64/kernel/vdso/note.o
+  CC      init/initramfs.o
+  AS      arch/arm64/crypto/sha1-ce-core.o
+  CC      kernel/fork.o
+  VDSOA   arch/arm64/kernel/vdso/sigreturn.o
+  CC      arch/arm64/crypto/sha2-ce-glue.o
+  VDSOL   arch/arm64/kernel/vdso/vdso.so.dbg
+  OBJCOPY arch/arm64/kernel/vdso/vdso.so
+  CC      init/calibrate.o
+  VDSOSYM arch/arm64/kernel/vdso/vdso-offsets.h
+  AS      arch/arm64/kernel/vdso/vdso.o
+  CC      mm/filemap.o
+  CC      init/init_task.o
+  CC      arch/arm64/mm/init.o
+  LD      arch/arm64/kernel/vdso/built-in.o
+  CC      init/version.o
+  CC      arch/arm64/kernel/efi-stub.o
+  AS      arch/arm64/crypto/sha2-ce-core.o
+  CC      arch/arm64/crypto/ghash-ce-glue.o
+  LD      init/mounts.o
+  AS      arch/arm64/mm/cache.o
+  AS      arch/arm64/crypto/ghash-ce-core.o
+  LD      init/built-in.o
+  CC      arch/arm64/mm/copypage.o
+  CC      arch/arm64/crypto/aes-ce-cipher.o
+  AS      arch/arm64/kernel/efi-entry.o
+  CC      arch/arm64/mm/flush.o
+  AS      arch/arm64/kernel/head.o
+  CC      arch/arm64/mm/ioremap.o
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/kernel/head.S:19:0:
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:77:0: warning: "HVC_GET_VECTORS" redefined
+ #define HVC_GET_VECTORS 0
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:38:0: note: this is the location of the previous definition
+ #define HVC_GET_VECTORS 1
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:84:0: warning: "HVC_SET_VECTORS" redefined
+ #define HVC_SET_VECTORS 1
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:46:0: note: this is the location of the previous definition
+ #define HVC_SET_VECTORS 2
+ ^
+  CC      arch/arm64/crypto/aes-ce-ccm-glue.o
+  CC      kernel/exec_domain.o
+  LDS     arch/arm64/kernel/vmlinux.lds
+  AS      arch/arm64/crypto/aes-ce-ccm-core.o
+  CC      arch/arm64/mm/mmap.o
+  CC      arch/arm64/kernel/debug-monitors.o
+  CC      arch/arm64/crypto/aes-glue-ce.o
+  CC      kernel/panic.o
+  CC      arch/arm64/mm/pgd.o
+  AS      arch/arm64/crypto/aes-ce.o
+  CC      arch/arm64/crypto/aes-glue-neon.o
+  CC      mm/mempool.o
+  CC      arch/arm64/mm/mmu.o
+  AS      arch/arm64/crypto/aes-neon.o
+  AS      arch/arm64/kernel/entry.o
+  CC      arch/arm64/crypto/crc32-arm64.o
+  CC      arch/arm64/kernel/irq.o
+  CC      arch/arm64/mm/context.o
+  CC      fs/open.o
+  LD      arch/arm64/crypto/sha1-ce.o
+  CC      kernel/cpu.o
+  LD      arch/arm64/crypto/sha2-ce.o
+  LD      arch/arm64/crypto/ghash-ce.o
+  LD      arch/arm64/crypto/aes-ce-ccm.o
+  CC      arch/arm64/kernel/fpsimd.o
+  LD      arch/arm64/crypto/aes-ce-blk.o
+  LD      arch/arm64/crypto/aes-neon-blk.o
+  AS      arch/arm64/kernel/entry-fpsimd.o
+  CC      mm/oom_kill.o
+  LD      arch/arm64/crypto/built-in.o
+  CC      arch/arm64/kernel/process.o
+  CC      arch/arm64/mm/pageattr.o
+  AS      arch/arm64/mm/proc.o
+  CC      ipc/compat.o
+  LD      arch/arm64/mm/built-in.o
+  CC      arch/arm64/kernel/ptrace.o
+  CC      security/hwselinux/hwselinux_dsm.o
+  CC      mm/maccess.o
+  CC      arch/arm64/kernel/setup.o
+  CC      kernel/exit.o
+  CC      fs/read_write.o
+  CC      mm/page_alloc.o
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/kernel/setup.c:67:0:
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:77:0: warning: "HVC_GET_VECTORS" redefined
+ #define HVC_GET_VECTORS 0
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:38:0: note: this is the location of the previous definition
+ #define HVC_GET_VECTORS 1
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:84:0: warning: "HVC_SET_VECTORS" redefined
+ #define HVC_SET_VECTORS 1
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:46:0: note: this is the location of the previous definition
+ #define HVC_SET_VECTORS 2
+ ^
+  LD      security/hwselinux/built-in.o
+  CC      security/keys/gc.o
+  CC      arch/arm64/kernel/signal.o
+  CC      crypto/api.o
+  CC      ipc/util.o
+  CC      security/keys/key.o
+  CC      arch/arm64/kernel/sys.o
+  CC      arch/arm64/kernel/stacktrace.o
+  CC      crypto/cipher.o
+  CC      security/keys/keyring.o
+  CC      ipc/msgutil.o
+  CC      arch/arm64/kernel/time.o
+  CC      fs/file_table.o
+  CC      arch/arm64/kernel/traps.o
+  CC      kernel/softirq.o
+  CC      arch/arm64/kernel/io.o
+  CC      ipc/msg.o
+  CC      crypto/compress.o
+  CC      arch/arm64/kernel/vdso.o
+  CC      fs/super.o
+  CC      security/keys/keyctl.o
+  CC      ipc/sem.o
+  CC      crypto/memneq.o
+  CC      arch/arm64/kernel/psci.o
+  AS      arch/arm64/kernel/psci-call.o
+  CC      arch/arm64/kernel/cpu_ops.o
+  CC      kernel/resource.o
+  CC      crypto/crypto_wq.o
+  CC      crypto/algapi.o
+  CC      fs/char_dev.o
+  CC      security/keys/permission.o
+  CC      arch/arm64/kernel/insn.o
+  CC      mm/page-writeback.o
+  CC      kernel/sysctl.o
+  CC      ipc/shm.o
+  CC      mm/readahead.o
+  CC      security/keys/process_keys.o
+  CC      fs/stat.o
+  CC      security/keys/request_key.o
+  CC      crypto/scatterwalk.o
+  CC      arch/arm64/kernel/return_address.o
+  CC      mm/swap.o
+  CC      arch/arm64/kernel/cpuinfo.o
+  CC      security/keys/request_key_auth.o
+  CC      crypto/proc.o
+  CC      fs/exec.o
+  CC      ipc/syscall.o
+  CC      mm/truncate.o
+  CC      ipc/ipc_sysctl.o
+  CC      arch/arm64/kernel/cpu_errata.o
+  CC      kernel/sysctl_binary.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/exec.c: In function '__set_task_comm':
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/exec.c:1077:30: warning: passing argument 2 of 'set_main_looper_thread' discards 'const' qualifier from pointer target type
+  set_main_looper_thread(tsk, buf);
+                              ^
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/fs/exec.c:70:0:
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/huawei_platform/power/msgnotify.h:19:6: note: expected 'char *' but argument is of type 'const char *'
+ void set_main_looper_thread(struct task_struct *tsk, char *buf);
+      ^
+  CC      security/keys/user_defined.o
+  CC      crypto/aead.o
+  LD      ipc/built-in.o
+  CC      arch/arm64/kernel/cpufeature.o
+  CC      security/keys/proc.o
+  CC      kernel/capability.o
+  CC      arch/arm64/kernel/alternative.o
+  CC      mm/vmscan.o
+  CC      mm/shmem.o
+  CC      fs/pipe.o
+  CC      arch/arm64/kernel/cacheinfo.o
+  CC      security/keys/sysctl.o
+  CC      crypto/ablkcipher.o
+  CC      block/bio.o
+  CC      kernel/ptrace.o
+  LD      security/keys/built-in.o
+  CC      arch/arm64/kernel/smp.o
+  CC      fs/namei.o
+  GEN     security/selinux/flask.h security/selinux/av_permissions.h
+  CC      security/selinux/avc.o
+  CC      mm/util.o
+  CC      crypto/blkcipher.o
+  CC      kernel/user.o
+  CC      arch/arm64/kernel/smp_spin_table.o
+  CC      mm/mmzone.o
+  CC      block/elevator.o
+  CC      kernel/signal.o
+  AS      arch/arm64/kernel/smccc-call.o
+  CC      mm/vmstat.o
+  CC      mm/backing-dev.o
+  AS      arch/arm64/kernel/hyp-stub.o
+  CC      security/selinux/hooks.o
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/kvm_asm.h:21:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/kernel/hyp-stub.S:26:
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:77:0: warning: "HVC_GET_VECTORS" redefined
+ #define HVC_GET_VECTORS 0
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:38:0: note: this is the location of the previous definition
+ #define HVC_GET_VECTORS 1
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:84:0: warning: "HVC_SET_VECTORS" redefined
+ #define HVC_SET_VECTORS 1
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:46:0: note: this is the location of the previous definition
+ #define HVC_SET_VECTORS 2
+ ^
+  CC      arch/arm64/kernel/sys32.o
+  CC      crypto/chainiv.o
+  CC      block/blk-core.o
+  AS      arch/arm64/kernel/kuser32.o
+  CC      crypto/eseqiv.o
+  CC      arch/arm64/kernel/signal32.o
+  CC      mm/mm_init.o
+  CC      mm/mmu_context.o
+  CC      crypto/seqiv.o
+  CC      mm/percpu.o
+  CC      fs/fcntl.o
+  CC      crypto/ahash.o
+  CC      arch/arm64/kernel/sys_compat.o
+  AS      arch/arm64/kernel/entry32.o
+  CC      arch/arm64/kernel/../../arm/kernel/opcodes.o
+  CC      arch/arm64/kernel/arm64ksyms.o
+  CC      crypto/shash.o
+  CC      kernel/sys.o
+  CC      fs/ioctl.o
+  CC      arch/arm64/kernel/module.o
+  CC      mm/slab_common.o
+  CC      crypto/pcompress.o
+  CC      arch/arm64/kernel/perf_regs.o
+  CC      fs/readdir.o
+  CC      block/blk-tag.o
+  CC      arch/arm64/kernel/perf_event.o
+  CC      crypto/algboss.o
+  CC      kernel/kmod.o
+  CC      arch/arm64/kernel/hw_breakpoint.o
+  CC      security/selinux/selinuxfs.o
+  CC      block/blk-sysfs.o
+  CC      fs/select.o
+  CC      crypto/testmgr.o
+  CC      mm/compaction.o
+  CC      kernel/workqueue.o
+  CC      arch/arm64/kernel/hisi_arch_watchpoint.o
+  CC      block/blk-flush.o
+  CC      fs/dcache.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/mm/compaction.c: In function '__compaction_suitable':
+/home/petya230/kernel/android_kernel_huawei_hi6250/mm/compaction.c:1282:6: warning: unused variable 'fragindex' [-Wunused-variable]
+  int fragindex;
+      ^
+  CC      crypto/cmac.o
+  AS      arch/arm64/kernel/sleep.o
+  CC      arch/arm64/kernel/suspend.o
+  CC      block/blk-settings.o
+  CC      fs/inode.o
+  CC      crypto/hmac.o
+  CC      security/selinux/netlink.o
+  CC      arch/arm64/kernel/cpuidle.o
+  CC      mm/vmacache.o
+  CC      block/blk-ioc.o
+  CC      arch/arm64/kernel/armv8_deprecated.o
+  CC      crypto/xcbc.o
+  CC      security/selinux/nlmsgtab.o
+  CC      mm/interval_tree.o
+  CC      block/blk-map.o
+  CC      mm/list_lru.o
+  CC      crypto/crypto_null.o
+  CC      arch/arm64/kernel/hmp_topology.o
+  CC      mm/workingset.o
+  CC      block/blk-exec.o
+  CC      security/selinux/netif.o
+  CC      crypto/md5.o
+  CC      crypto/sha1_generic.o
+  CC      fs/attr.o
+  CC      mm/debug.o
+  CC      kernel/pid.o
+  LD      arch/arm64/kernel/built-in.o
+  CC      crypto/sha256_generic.o
+  CC      crypto/sha512_generic.o
+  CC      block/blk-merge.o
+  CC      mm/gup.o
+  CC      security/selinux/netnode.o
+  CC      fs/bad_inode.o
+  CC      drivers/amba/bus.o
+  CC      block/blk-softirq.o
+  CC      fs/file.o
+  CC      crypto/gf128mul.o
+  CC      mm/highmem.o
+  CC      kernel/task_work.o
+  CC      crypto/ecb.o
+  CC      block/blk-timeout.o
+  CC      security/selinux/netport.o
+  LD      drivers/amba/built-in.o
+  CC      kernel/extable.o
+  CC      drivers/android/binder.o
+  CC      mm/memory.o
+  CC      crypto/cbc.o
+  CC      crypto/cts.o
+  CC      kernel/params.o
+  CC      block/blk-iopoll.o
+  CC      fs/filesystems.o
+  CC      security/selinux/exports.o
+  CC      crypto/xts.o
+  CC      security/selinux/ss/ebitmap.o
+  CC      crypto/ctr.o
+  CC      fs/namespace.o
+  CC      block/blk-lib.o
+  CC      kernel/kthread.o
+  CC      security/selinux/ss/hashtab.o
+  CC      crypto/gcm.o
+  CC      block/blk-mq.o
+  CC      crypto/ccm.o
+  CC      security/selinux/ss/symtab.o
+  CC      kernel/sys_ni.o
+  CC      security/selinux/ss/sidtab.o
+  CC      kernel/nsproxy.o
+  CC      mm/mincore.o
+  CC      kernel/notifier.o
+  CC      security/selinux/ss/avtab.o
+  CC      crypto/cryptd.o
+  CC      security/selinux/ss/policydb.o
+  CC      mm/mlock.o
+  CC      kernel/ksysfs.o
+  CC      fs/seq_file.o
+  CC      kernel/cred.o
+  CC      crypto/des_generic.o
+  CC      fs/xattr.o
+  CC      crypto/twofish_generic.o
+  CC      block/blk-mq-tag.o
+  CC      mm/mmap.o
+  CC      kernel/reboot.o
+  CC      crypto/twofish_common.o
+  CC      crypto/aes_generic.o
+  CC      block/blk-mq-sysfs.o
+  CC      kernel/async.o
+  CC      fs/libfs.o
+  LD      drivers/android/built-in.o
+  LD      drivers/auxdisplay/built-in.o
+  CC      security/selinux/ss/services.o
+  CC      crypto/arc4.o
+  CC      kernel/range.o
+  CC      block/blk-mq-cpu.o
+  CC      kernel/smpboot.o
+  CC      block/blk-mq-cpumap.o
+  CC      drivers/base/component.o
+  CC      mm/mprotect.o
+  CC      crypto/deflate.o
+  CC      crypto/crc32c_generic.o
+  CC      fs/fs-writeback.o
+  CC      crypto/crc32.o
+  CC      kernel/groups.o
+  CC      block/ioctl.o
+  CC      drivers/base/core.o
+  CC      mm/mremap.o
+  CC      fs/pnode.o
+  CC      crypto/authenc.o
+  CC      kernel/bpf/core.o
+  CC      block/genhd.o
+  CC      mm/msync.o
+  CC      mm/rmap.o
+  CC      security/selinux/ss/conditional.o
+  CC      drivers/base/bus.o
+  CC      crypto/authencesn.o
+  LD      kernel/bpf/built-in.o
+  CC      mm/vmalloc.o
+  CC      kernel/cgroup_huawei/cgroup_pids.o
+  CC      drivers/base/dd.o
+  CC      mm/pagewalk.o
+  CC      security/selinux/ss/mls.o
+  CC      block/scsi_ioctl.o
+  CC      crypto/rng.o
+  CC      fs/splice.o
+  CC      fs/sync.o
+  CC      drivers/base/syscore.o
+  LD      kernel/cgroup_huawei/built-in.o
+  CC      kernel/events/core.o
+  CC      drivers/base/driver.o
+  CC      crypto/krng.o
+  CC      fs/utimes.o
+  CC      security/selinux/ss/status.o
+  CC      block/partition-generic.o
+  CC      fs/stack.o
+  CC      mm/pgtable-generic.o
+  CC      drivers/base/class.o
+  CC      crypto/ansi_cprng.o
+  CC      fs/fs_struct.o
+  CC      fs/statfs.o
+  LD      security/selinux/selinux.o
+  LD      security/selinux/built-in.o
+  CC      security/commoncap.o
+  CC      block/ioprio.o
+  CC      mm/process_vm_access.o
+  CC      fs/fs_pin.o
+  CC      drivers/base/platform.o
+  CC      fs/nsfs.o
+  CC      crypto/ghash-generic.o
+  CC      security/min_addr.o
+  CC      drivers/base/cpu.o
+  CC      fs/buffer.o
+  CC      mm/init-mm.o
+  CC      crypto/af_alg.o
+  CC      block/partitions/check.o
+  CC      fs/block_dev.o
+  CC      security/security.o
+  CC      mm/nobootmem.o
+  CC      drivers/base/firmware.o
+  CC      drivers/base/init.o
+  CC      block/partitions/msdos.o
+  CC      crypto/algif_hash.o
+  CC      mm/fadvise.o
+  CC      security/capability.o
+  CC      drivers/base/map.o
+  CC      mm/madvise.o
+  CC      block/partitions/efi.o
+  CC      fs/direct-io.o
+  CC      kernel/events/ring_buffer.o
+  CC      drivers/base/devres.o
+  CC      crypto/algif_skcipher.o
+  CC      security/lsm_audit.o
+  CC      mm/memblock.o
+  LD      block/partitions/built-in.o
+  CC      block/bounce.o
+  CC      kernel/events/callchain.o
+  CC      drivers/base/attribute_container.o
+  CC      fs/mpage.o
+  CC      block/bsg.o
+  CC      kernel/events/hw_breakpoint.o
+  LD      security/built-in.o
+  CC      drivers/base/transport_class.o
+  CC      mm/page_io.o
+  CC      sound/sound_core.o
+  CC      crypto/ablk_helper.o
+  CC      drivers/base/topology.o
+  CC      fs/proc_namespace.o
+  CC      mm/swap_state.o
+  LD      kernel/events/built-in.o
+  CC      block/blk-cgroup.o
+  CC      drivers/base/container.o
+  CC      kernel/irq/irqdesc.o
+  CC      fs/configfs/inode.o
+  LD      sound/arm/built-in.o
+  LD      sound/atmel/built-in.o
+  CC [M]  crypto/tcrypt.o
+  CC      sound/core/sound.o
+  CC      drivers/base/property.o
+  CC      fs/configfs/file.o
+  CC      mm/swapfile.o
+  CC      sound/core/init.o
+  CC      fs/debugfs/inode.o
+  CC      kernel/irq/handle.o
+  CC      drivers/base/cacheinfo.o
+  CC      fs/configfs/dir.o
+  CC      block/blk-throttle.o
+  CC      kernel/irq/manage.o
+  CC      fs/debugfs/file.o
+  LD      crypto/crypto.o
+  LD      crypto/crypto_algapi.o
+  LD      crypto/crypto_blkcipher.o
+  CC      sound/core/memory.o
+  LD      crypto/crypto_hash.o
+  LD      crypto/cryptomgr.o
+  LD      crypto/built-in.o
+  CC      drivers/base/devtmpfs.o
+  LD      firmware/built-in.o
+  CC      sound/core/info.o
+  CC      fs/configfs/symlink.o
+  LD      fs/debugfs/debugfs.o
+  CC      net/socket.o
+  LD      fs/debugfs/built-in.o
+  CC      fs/devpts/inode.o
+  CC      fs/configfs/mount.o
+  CC      mm/dmapool.o
+  CC      drivers/base/dma-contiguous.o
+  CC      sound/core/control.o
+  CC      kernel/irq/spurious.o
+  CC      fs/configfs/item.o
+  LD      fs/devpts/devpts.o
+  LD      fs/devpts/built-in.o
+  CC      sound/core/misc.o
+  CC      mm/ksm.o
+  CC      drivers/base/power/sysfs.o
+  CC      kernel/irq/resend.o
+  CC      block/noop-iosched.o
+  CC      sound/core/device.o
+  LD      fs/configfs/configfs.o
+  LD      fs/configfs/built-in.o
+  CC      kernel/irq/chip.o
+  CC      fs/ecryptfs/dentry.o
+  CC      block/deadline-iosched.o
+  CC      drivers/base/power/generic_ops.o
+  CC      sound/core/jack.o
+  CC      sound/core/timer.o
+  LD      net/802/built-in.o
+  CC      fs/ecryptfs/file.o
+  CC      kernel/irq/dummychip.o
+  CC      drivers/base/power/common.o
+  CC      mm/slub.o
+  CC      block/cfq-iosched.o
+  CC      sound/core/pcm.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/ecryptfs/file.c: In function 'is_file_dir_match':
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/ecryptfs/file.c:399:18: warning: passing argument 1 of 'is_root_dir' discards 'const' qualifier from pointer target type
+  if (is_root_dir(fp_dentry->d_name.name)){
+                  ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/ecryptfs/file.c:379:6: note: expected 'char *' but argument is of type 'const unsigned char *'
+ bool is_root_dir(char *name)
+      ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/ecryptfs/file.c:409:19: warning: passing argument 1 of 'is_root_dir' discards 'const' qualifier from pointer target type
+   if (is_root_dir(p->d_parent->d_name.name)) {
+                   ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/ecryptfs/file.c:379:6: note: expected 'char *' but argument is of type 'const unsigned char *'
+ bool is_root_dir(char *name)
+      ^
+  CC      net/core/sock.o
+  CC      fs/ecryptfs/inode.o
+  CC      kernel/irq/devres.o
+  CC      drivers/base/power/qos.o
+  CC      kernel/irq/autoprobe.o
+  CC      block/compat_ioctl.o
+  CC      drivers/base/power/runtime.o
+  CC      sound/core/pcm_native.o
+  CC      kernel/irq/irqdomain.o
+  CC      fs/ecryptfs/main.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/ecryptfs/main.c: In function 'parse_enc_filter_parms':
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/ecryptfs/main.c:304:8: warning: unused variable 'token' [-Wunused-variable]
+  char *token = NULL;
+        ^
+  CC      sound/core/pcm_lib.o
+  CC      block/hisi_freq_ctl.o
+  CC      drivers/base/power/main.o
+  CC      net/core/request_sock.o
+  CC      fs/ecryptfs/super.o
+  CC      mm/migrate.o
+  CC      block/kirin_partition.o
+  CC      kernel/irq/proc.o
+  CC      fs/ecryptfs/mmap.o
+  CC      sound/core/pcm_timer.o
+  CC      net/core/skbuff.o
+  CC      block/software_system_wp.o
+  CC      drivers/base/power/wakeup.o
+  CC      kernel/irq/pm.o
+  CC      net/core/datagram.o
+  CC      sound/core/pcm_misc.o
+  CC      fs/ecryptfs/read_write.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/block/software_system_wp.c: In function 'is_protected_partition':
+/home/petya230/kernel/android_kernel_huawei_hi6250/block/software_system_wp.c:112:4: warning: return makes pointer from integer without a cast
+    return 1;
+    ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/block/software_system_wp.c: In function 'syswp_proc_write':
+/home/petya230/kernel/android_kernel_huawei_hi6250/block/software_system_wp.c:182:15: warning: passing argument 1 of 'atoi' discards 'const' qualifier from pointer target type
+  value = atoi(buf);
+               ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/block/software_system_wp.c:66:12: note: expected 'char *' but argument is of type 'const char *'
+ static int atoi(char *s)
+            ^
+  LD      kernel/irq/built-in.o
+  LD      kernel/livepatch/built-in.o
+  CC      mm/page_isolation.o
+  CC      block/hisi_blk_scsi_kern.o
+  CC      sound/core/pcm_memory.o
+  CC      kernel/locking/mutex.o
+  CC      fs/ecryptfs/crypto.o
+  CC      drivers/base/power/opp/core.o
+  CC      mm/zsmalloc.o
+  CC      block/blk-stat.o
+  CC      kernel/locking/semaphore.o
+  CC      sound/core/memalloc.o
+  CC      sound/core/rawmidi.o
+  CC [M]  block/test-iosched.o
+  CC      kernel/locking/rwsem.o
+  CC      fs/ecryptfs/keystore.o
+  CC      mm/early_ioremap.o
+  CC      drivers/base/power/opp/cpu.o
+  CC      kernel/locking/spinlock.o
+  CC      mm/cma.o
+  CC      drivers/base/power/opp/debugfs.o
+  CC      kernel/locking/osq_lock.o
+  CC      kernel/locking/lglock.o
+  LD      block/built-in.o
+  CC      net/core/stream.o
+  CC      kernel/locking/rtmutex.o
+  LD      arch/arm64/lib/built-in.o
+  AS      arch/arm64/lib/bitops.o
+  LD      drivers/base/power/opp/built-in.o
+  CC      drivers/base/power/clock_ops.o
+  CC      kernel/locking/spinlock_debug.o
+  AS      arch/arm64/lib/clear_page.o
+  CC      fs/ecryptfs/kthread.o
+  LD      mm/built-in.o
+  CC      sound/core/compress_offload.o
+  AS      arch/arm64/lib/clear_user.o
+  CC      net/core/scm.o
+  AS      arch/arm64/lib/copy_from_user.o
+  CC      fs/ecryptfs/debug.o
+  AS      arch/arm64/lib/copy_in_user.o
+  CC      kernel/locking/rwsem-xadd.o
+  LD      drivers/base/power/built-in.o
+  AS      arch/arm64/lib/copy_page.o
+  CC      drivers/base/dma-mapping.o
+  CC      drivers/base/regmap/regmap.o
+  AS      arch/arm64/lib/copy_to_user.o
+  CC      lib/lockref.o
+  CC      arch/arm64/lib/delay.o
+  LD      fs/ecryptfs/ecryptfs.o
+  CC      net/core/gen_stats.o
+  LD      fs/ecryptfs/built-in.o
+  LD      kernel/locking/built-in.o
+  LD      sound/core/snd.o
+  CC      drivers/base/dma-coherent.o
+  LD      sound/core/snd-timer.o
+  CC      lib/bcd.o
+  LD      sound/core/snd-pcm.o
+  LD      sound/core/snd-rawmidi.o
+  CC      kernel/power/qos.o
+  LD      sound/core/snd-compress.o
+  LD      sound/core/built-in.o
+  CC      fs/exfat/exfat_core.o
+  CC      lib/div64.o
+  AS      arch/arm64/lib/memchr.o
+  LD      sound/drivers/mpu401/built-in.o
+  CC      lib/sort.o
+  LD      sound/drivers/opl3/built-in.o
+  AS      arch/arm64/lib/memcmp.o
+  LD      sound/drivers/opl4/built-in.o
+  CC      net/core/gen_estimator.o
+  LD      sound/drivers/pcsp/built-in.o
+  CC      lib/parser.o
+  AS      arch/arm64/lib/memcpy.o
+  CC      drivers/base/firmware_class.o
+  LD      sound/drivers/vx/built-in.o
+  LD      sound/drivers/built-in.o
+  AS      arch/arm64/lib/memmove.o
+  AS      arch/arm64/lib/memset.o
+  LD      sound/firewire/built-in.o
+  AS      arch/arm64/lib/strchr.o
+  LD      sound/hda/built-in.o
+  CC      kernel/power/main.o
+  AS      arch/arm64/lib/strcmp.o
+  LD      sound/i2c/other/built-in.o
+  LD      sound/i2c/built-in.o
+  CC      lib/halfmd4.o
+  AS      arch/arm64/lib/strlen.o
+  CC      drivers/base/regmap/regcache.o
+  CC      lib/debug_locks.o
+  AS      arch/arm64/lib/strncmp.o
+  CC      drivers/base/module.o
+  LD      sound/isa/ad1816a/built-in.o
+  AS      arch/arm64/lib/strnlen.o
+  CC      lib/random32.o
+  LD      sound/isa/ad1848/built-in.o
+  CC      net/core/net_namespace.o
+  AS      arch/arm64/lib/strrchr.o
+  LD      sound/isa/cs423x/built-in.o
+  CC      kernel/power/process.o
+  AR      arch/arm64/lib/lib.a
+  LD      sound/isa/es1688/built-in.o
+  CC      drivers/base/regmap/regcache-rbtree.o
+  CC      drivers/base/regmap/regcache-lzo.o
+  LD      sound/isa/galaxy/built-in.o
+  CC      drivers/base/regmap/regcache-flat.o
+  CC      lib/bust_spinlocks.o
+  LD      sound/isa/gus/built-in.o
+  CC      fs/exfat/exfat_super.o
+  LD      sound/isa/msnd/built-in.o
+  LD      sound/isa/opti9xx/built-in.o
+  LD      sound/isa/sb/built-in.o
+  LD      sound/isa/wavefront/built-in.o
+  LD      sound/isa/wss/built-in.o
+  LD      sound/isa/built-in.o
+  LD      sound/mips/built-in.o
+  CC      drivers/base/regmap/regmap-debugfs.o
+  LD      sound/parisc/built-in.o
+  CC      lib/kasprintf.o
+  CC      drivers/base/regmap/regmap-i2c.o
+  CC      drivers/base/regmap/regmap-spi.o
+  CC      kernel/power/suspend.o
+  CC      lib/bitmap.o
+  CC      net/core/secure_seq.o
+  LD      sound/pci/ac97/built-in.o
+  LD      sound/pcmcia/pdaudiocf/built-in.o
+  LD      sound/pcmcia/vx/built-in.o
+  CC      fs/exfat/exfat_api.o
+  LD      sound/pci/ali5451/built-in.o
+  LD      sound/pcmcia/built-in.o
+  CC      net/core/flow_dissector.o
+  LD      sound/pci/asihpi/built-in.o
+  LD      sound/pci/au88x0/built-in.o
+  LD      sound/ppc/built-in.o
+  LD      sound/pci/ca0106/built-in.o
+  LD      sound/pci/aw2/built-in.o
+  LD      sound/sh/built-in.o
+  LD      drivers/base/regmap/built-in.o
+  LD      sound/pci/cs46xx/built-in.o
+  LD      sound/pci/cs5535audio/built-in.o
+  CC      fs/exfat/exfat_blkdev.o
+  CC      drivers/base/pinctrl.o
+  LD      sound/pci/ctxfi/built-in.o
+  LD      sound/pci/echoaudio/built-in.o
+  LD      sound/pci/emu10k1/built-in.o
+  LD      sound/pci/ice1712/built-in.o
+  LD      sound/pci/hda/built-in.o
+  LD      sound/pci/korg1212/built-in.o
+  CC      net/core/sysctl_net_core.o
+  CC      lib/scatterlist.o
+  LD      sound/pci/lola/built-in.o
+  LD      sound/pci/lx6464es/built-in.o
+  CC      kernel/power/suspend_test.o
+  LD      sound/pci/mixart/built-in.o
+  LD      drivers/base/built-in.o
+  CC      net/core/dev.o
+  LD      sound/pci/nm256/built-in.o
+  CC      sound/soc/soc-core.o
+  CC      drivers/block/brd.o
+  LD      sound/pci/oxygen/built-in.o
+  CC      lib/gcd.o
+  LD      sound/pci/pcxhr/built-in.o
+  CC      fs/exfat/exfat_cache.o
+  LD      sound/pci/riptide/built-in.o
+  CC      kernel/power/autosleep.o
+  CC      lib/lcm.o
+  LD      sound/pci/rme9652/built-in.o
+  CC      lib/list_sort.o
+  LD      sound/pci/trident/built-in.o
+  LD      sound/pci/vx222/built-in.o
+  LD      sound/pci/ymfpci/built-in.o
+  CC      kernel/power/wakelock.o
+  LD      sound/pci/built-in.o
+  CC      lib/uuid.o
+  CC      drivers/block/loop.o
+  CC      kernel/power/suspend_time.o
+  CC      lib/flex_array.o
+  CC      fs/exfat/exfat_data.o
+  LD      sound/sparc/built-in.o
+  LD      sound/spi/built-in.o
+  CC      kernel/power/poweroff.o
+  CC      kernel/power/wakeup_reason.o
+  LD      sound/synth/built-in.o
+  CC      lib/iov_iter.o
+  CC      fs/exfat/exfat_bitmap.o
+  LD      sound/usb/6fire/built-in.o
+  CC      fs/exfat/exfat_nls.o
+  LD      sound/usb/caiaq/built-in.o
+  LD      sound/usb/bcd2000/built-in.o
+  LD      sound/usb/hiface/built-in.o
+  LD      sound/usb/misc/built-in.o
+  LD      kernel/power/built-in.o
+  CC      sound/last.o
+  LD      sound/usb/usx2y/built-in.o
+  CC      kernel/printk/printk.o
+  LD      sound/usb/built-in.o
+  LD      sound/soundcore.o
+  CC      fs/exfat/exfat_oal.o
+  CC      fs/exfat/exfat_upcase.o
+  CC      kernel/rcu/update.o
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/kernel/printk/printk.c:19:0:
+/home/petya230/kernel/android_kernel_huawei_hi6250/kernel/printk/hisi_printk.c: In function 'get_console_name':
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/kernel.h:727:17: warning: comparison of distinct pointer types lacks a cast
+  (void) (&_min1 == &_min2);  \
+                 ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/kernel/printk/hisi_printk.c:198:57: note: in expansion of macro 'min'
+   strncpy(name, console_cmdline[selected_console].name, min(sizeof(console_cmdline[selected_console].name), name_buf_len));
+                                                         ^
+  LD      fs/exfat/exfat.o
+  CC      drivers/block/cryptoloop.o
+  LD      fs/exfat/built-in.o
+  LD      fs/exofs/built-in.o
+  CC      kernel/sched/hmp_core.o
+  CC      lib/clz_ctz.o
+  CC      kernel/rcu/srcu.o
+  CC      lib/bsearch.o
+  CC      drivers/block/zram/zcomp_lzo.o
+  CC      sound/soc/soc-dapm.o
+  CC      lib/find_bit.o
+  LD      kernel/printk/built-in.o
+  CC      fs/ext4/balloc.o
+  CC      lib/llist.o
+  CC      drivers/block/zram/zcomp.o
+  CC      kernel/rcu/tree.o
+  CC      lib/memweight.o
+  HZFILE  kernel/time/hz.bc
+  CC      kernel/time/timer.o
+  CC      lib/kfifo.o
+  CC      drivers/block/zram/zram_drv.o
+  CC      fs/ext4/bitmap.o
+  CC      net/core/ethtool.o
+  CC      fs/ext4/dir.o
+  CC      lib/percpu-refcount.o
+  CC      sound/soc/soc-jack.o
+  CC      drivers/block/zram/zcomp_lz4.o
+  CC      lib/percpu_ida.o
+  CC      fs/ext4/file.o
+  CC      kernel/time/hrtimer.o
+  LD      drivers/block/zram/zram.o
+  LD      drivers/block/zram/built-in.o
+  CC      lib/rhashtable.o
+  LD      drivers/block/built-in.o
+  CC      fs/ext4/fsync.o
+  CC      drivers/bootdevice/bootdevice.o
+  CC      sound/soc/soc-cache.o
+  LD      kernel/rcu/built-in.o
+  CC      net/core/dev_addr_lists.o
+  CC      sound/soc/soc-utils.o
+  CC      kernel/trace/trace_clock.o
+  CC      drivers/bootdevice/proc_boot.o
+  CC      fs/ext4/ialloc.o
+  CC      kernel/trace/ring_buffer.o
+  CC      sound/soc/soc-pcm.o
+  CC      lib/reciprocal_div.o
+  LD      drivers/bootdevice/built-in.o
+  CC      drivers/bus/arm-cci.o
+  CC      kernel/time/itimer.o
+  CC      lib/string_helpers.o
+  CC      net/core/dst.o
+  LD      drivers/bus/built-in.o
+  LD      drivers/cdrom/built-in.o
+  CC      lib/hexdump.o
+  CC      drivers/char/mem.o
+  CC      fs/ext4/inode.o
+  CC      kernel/time/posix-timers.o
+  CC      lib/kstrtox.o
+  CC      net/core/netevent.o
+  CC      drivers/char/random.o
+  CC      lib/pci_iomap.o
+  CC      sound/soc/soc-compress.o
+  CC      net/core/neighbour.o
+  CC      lib/iomap_copy.o
+  CC      kernel/trace/trace.o
+  CC      kernel/sched/proc.o
+  CC      kernel/time/posix-cpu-timers.o
+  CC      lib/devres.o
+  CC      sound/soc/soc-io.o
+  CC      drivers/char/misc.o
+  CC      lib/hweight.o
+  CC      kernel/sched/clock.o
+  CC      lib/assoc_array.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/kernel/time/posix-cpu-timers.c: In function 'set_process_cpu_timer':
+/home/petya230/kernel/android_kernel_huawei_hi6250/kernel/time/posix-cpu-timers.c:1220:13: warning: 'now' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     *oldval -= now;
+             ^
+  CC      sound/soc/soc-devres.o
+  CC      kernel/time/timekeeping.o
+  CC      kernel/sched/cputime.o
+  LD      drivers/char/agp/built-in.o
+  CC      fs/ext4/page-io.o
+  LD      drivers/char/built-in.o
+  CC      lib/bitrev.o
+  CC      drivers/clk/clk-devres.o
+  CC      sound/soc/soc-ops.o
+  CC      lib/crc-ccitt.o
+  CC      kernel/sched/idle_task.o
+  CC      net/core/rtnetlink.o
+  CC      lib/crc16.o
+  CC      drivers/clk/clkdev.o
+  CC      fs/ext4/ioctl.o
+  CC      kernel/sched/hmp_fair.o
+  CC      drivers/clk/clk.o
+  HOSTCC  lib/gen_crc32table
+/home/petya230/kernel/android_kernel_huawei_hi6250/kernel/sched/hmp_fair.c:7095:13: warning: 'attach_task' defined but not used [-Wunused-function]
+ static void attach_task(struct rq *rq, struct task_struct *p)
+             ^
+  CC      lib/libcrc32c.o
+  LD      sound/soc/adi/built-in.o
+  CC      kernel/time/ntp.o
+  LD      sound/soc/atmel/built-in.o
+  LD      sound/soc/au1x/built-in.o
+  LD      sound/soc/bcm/built-in.o
+  LD      sound/soc/blackfin/built-in.o
+  CC      lib/genalloc.o
+  LD      sound/soc/cirrus/built-in.o
+  CC      fs/ext4/namei.o
+  CC      sound/soc/codecs/hs_auto_calib/hs_auto_calib.o
+  CC      kernel/time/clocksource.o
+  CC      lib/lz4/lz4_compress.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c: In function 'headset_auto_calib_init':
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:65:44: warning: passing argument 3 of 'of_property_read_string' from incompatible pointer type
+  if(of_property_read_string(ncp, "status", &status)) {
+                                            ^
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/include/asm-generic/gpio.h:7:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/gpio.h:51,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of_gpio.h:20,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:8:
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of.h:298:12: note: expected 'const char **' but argument is of type 'char **'
+ extern int of_property_read_string(struct device_node *np,
+            ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:75:46: warning: passing argument 3 of 'of_property_read_u32' from incompatible pointer type
+  OF_KEY_VALUE_GET(ncp, "key_play_min_value", &btn_voltage.key_play_min_value, KEY_HOOK_MIN_VALUE);
+                                              ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:15:39: note: in definition of macro 'OF_KEY_VALUE_GET'
+  ret = of_property_read_u32(np, name, value); \
+                                       ^
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/include/asm-generic/gpio.h:7:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/gpio.h:51,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of_gpio.h:20,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:8:
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of.h:851:19: note: expected 'u32 *' but argument is of type 'short unsigned int *'
+ static inline int of_property_read_u32(const struct device_node *np,
+                   ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:76:46: warning: passing argument 3 of 'of_property_read_u32' from incompatible pointer type
+  OF_KEY_VALUE_GET(ncp, "key_play_max_value", &btn_voltage.key_play_max_value, KEY_HOOK_MAX_VALUE);
+                                              ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:15:39: note: in definition of macro 'OF_KEY_VALUE_GET'
+  ret = of_property_read_u32(np, name, value); \
+                                       ^
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/include/asm-generic/gpio.h:7:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/gpio.h:51,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of_gpio.h:20,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:8:
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of.h:851:19: note: expected 'u32 *' but argument is of type 'short unsigned int *'
+ static inline int of_property_read_u32(const struct device_node *np,
+                   ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:77:49: warning: passing argument 3 of 'of_property_read_u32' from incompatible pointer type
+  OF_KEY_VALUE_GET(ncp, "key_forward_min_value", &btn_voltage.key_forward_min_value, KEY_FORWARD_MIN_VALUE);
+                                                 ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:15:39: note: in definition of macro 'OF_KEY_VALUE_GET'
+  ret = of_property_read_u32(np, name, value); \
+                                       ^
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/include/asm-generic/gpio.h:7:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/gpio.h:51,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of_gpio.h:20,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:8:
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of.h:851:19: note: expected 'u32 *' but argument is of type 'short unsigned int *'
+ static inline int of_property_read_u32(const struct device_node *np,
+                   ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:78:49: warning: passing argument 3 of 'of_property_read_u32' from incompatible pointer type
+  OF_KEY_VALUE_GET(ncp, "key_forward_max_value", &btn_voltage.key_forward_max_value, KEY_FORWARD_MAX_VALUE);
+                                                 ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:15:39: note: in definition of macro 'OF_KEY_VALUE_GET'
+  ret = of_property_read_u32(np, name, value); \
+                                       ^
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/include/asm-generic/gpio.h:7:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/gpio.h:51,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of_gpio.h:20,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:8:
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of.h:851:19: note: expected 'u32 *' but argument is of type 'short unsigned int *'
+ static inline int of_property_read_u32(const struct device_node *np,
+                   ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:79:46: warning: passing argument 3 of 'of_property_read_u32' from incompatible pointer type
+  OF_KEY_VALUE_GET(ncp, "key_back_min_value", &btn_voltage.key_back_min_value, KEY_BACK_MIN_VALUE);
+                                              ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:15:39: note: in definition of macro 'OF_KEY_VALUE_GET'
+  ret = of_property_read_u32(np, name, value); \
+                                       ^
+  CC      kernel/trace/trace_output.o
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/include/asm-generic/gpio.h:7:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/gpio.h:51,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of_gpio.h:20,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:8:
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of.h:851:19: note: expected 'u32 *' but argument is of type 'short unsigned int *'
+ static inline int of_property_read_u32(const struct device_node *np,
+                   ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:80:46: warning: passing argument 3 of 'of_property_read_u32' from incompatible pointer type
+  OF_KEY_VALUE_GET(ncp, "key_back_max_value", &btn_voltage.key_back_max_value, KEY_BACK_MAX_VALUE);
+                                              ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:15:39: note: in definition of macro 'OF_KEY_VALUE_GET'
+  ret = of_property_read_u32(np, name, value); \
+                                       ^
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/include/asm-generic/gpio.h:7:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/gpio.h:51,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of_gpio.h:20,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:8:
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/of.h:851:19: note: expected 'u32 *' but argument is of type 'short unsigned int *'
+ static inline int of_property_read_u32(const struct device_node *np,
+                   ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c: In function 'record_sort':
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:164:6: warning: unused variable 'j' [-Wunused-variable]
+  int j = 0;
+      ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:163:6: warning: unused variable 'i' [-Wunused-variable]
+  int i = 0;
+      ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c: In function 'startup_FSM':
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hs_auto_calib/hs_auto_calib.c:251:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  int headset_type = 0;
+  ^
+  LD      sound/soc/codecs/hs_auto_calib/snd-soc-headset-auto-calib.o
+  LD      sound/soc/codecs/hs_auto_calib/built-in.o
+  CC      sound/soc/codecs/hi6555c.o
+  CC      kernel/time/jiffies.o
+  CC      lib/lz4/lz4_decompress.o
+  CC      kernel/time/timer_list.o
+  CC      net/core/utils.o
+  CC      drivers/clk/clk-divider.o
+  LD      lib/lz4/built-in.o
+  CC      lib/lzo/lzo1x_compress.o
+  CC      net/core/link_watch.o
+  CC      kernel/trace/trace_seq.o
+  CC      lib/lzo/lzo1x_decompress_safe.o
+  CC      fs/ext4/super.o
+  CC      kernel/time/timeconv.o
+  CC      kernel/trace/trace_stat.o
+  CC      drivers/clk/clk-fixed-factor.o
+  LD      lib/lzo/lzo_compress.o
+  LD      lib/lzo/lzo_decompress.o
+  LD      lib/lzo/built-in.o
+  CC      lib/reed_solomon/reed_solomon.o
+  CC      kernel/time/timecounter.o
+  CC      kernel/time/posix-clock.o
+  CC      net/core/filter.o
+  CC      drivers/clk/clk-fixed-rate.o
+  CC      kernel/trace/trace_printk.o
+  LD      lib/reed_solomon/built-in.o
+  CC      lib/xz/xz_dec_syms.o
+  CC      drivers/clk/clk-gate.o
+  CC      kernel/sched/rt.o
+  CC      kernel/time/alarmtimer.o
+  CC      sound/soc/codecs/hi6555c_debug.o
+  CC      drivers/clk/clk-mux.o
+  CC      lib/xz/xz_dec_stream.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/sound/soc/codecs/hi6555c_debug.c:364:16: warning: 'hi6555c_debug_rr_write' defined but not used [-Wunused-function]
+ static ssize_t hi6555c_debug_rr_write(struct file *file, const char __user *user_buf, size_t count, loff_t *ppos)
+                ^
+  CC      kernel/trace/trace_sched_switch.o
+  CC      kernel/time/clockevents.o
+  CC      drivers/clk/clk-composite.o
+  CC      net/core/sock_diag.o
+  CC      lib/xz/xz_dec_lzma2.o
+  CC      sound/soc/codecs/hi6402.o
+  CC      kernel/time/tick-common.o
+  CC      drivers/clk/clk-fractional-divider.o
+  CC      kernel/trace/trace_nop.o
+  CC      net/core/dev_ioctl.o
+  CC      kernel/sched/deadline.o
+  CC      drivers/clk/clk-gpio-gate.o
+  CC      kernel/trace/blktrace.o
+  CC      lib/xz/xz_dec_bcj.o
+  CC      kernel/time/tick-broadcast.o
+  CC      drivers/clk/clk-conf.o
+  CC      net/core/tso.o
+  CC      kernel/trace/trace_events.o
+  LD      lib/xz/xz_dec.o
+  LD      lib/xz/built-in.o
+  CC      kernel/sched/stop_task.o
+  CC      lib/zlib_deflate/deflate.o
+  CC      drivers/clk/clk-xgene.o
+  CC      net/core/flow.o
+  CC      kernel/sched/wait.o
+  CC      kernel/time/tick-broadcast-hrtimer.o
+  LD      sound/soc/codecs/snd-soc-hi6555c.o
+  CC      drivers/clk/hisi/clk-hi3xxx.o
+  LD      sound/soc/codecs/snd-soc-hi6555c-debug.o
+  LD      sound/soc/codecs/snd-soc-hi6402.o
+  CC      net/core/net-sysfs.o
+  LD      sound/soc/codecs/built-in.o
+  LD      sound/soc/davinci/built-in.o
+  CC      lib/zlib_deflate/deftree.o
+  LD      sound/soc/dwc/built-in.o
+  CC      kernel/time/sched_clock.o
+  LD      sound/soc/fsl/built-in.o
+  LD      sound/soc/generic/built-in.o
+  CC      kernel/sched/completion.o
+  CC      kernel/time/tick-oneshot.o
+  CC      sound/soc/hisilicon/hi6210_pcm.o
+  CC      kernel/sched/idle.o
+  CC      drivers/clk/hisi/hisi-clk-mailbox.o
+  CC      kernel/trace/trace_export.o
+  CC      lib/zlib_deflate/deflate_syms.o
+  CC      kernel/time/tick-sched.o
+  CC      net/core/net-procfs.o
+  LD      lib/zlib_deflate/zlib_deflate.o
+  LD      drivers/clk/hisi/built-in.o
+  LD      lib/zlib_deflate/built-in.o
+  LD      drivers/clk/built-in.o
+  CC      kernel/sched/cpupri.o
+  CC      drivers/clocksource/clksrc-of.o
+  CC      lib/zlib_inflate/inffast.o
+  CC      kernel/trace/trace_event_perf.o
+  CC      sound/soc/hisilicon/slimbus_dai.o
+  CC      lib/zlib_inflate/inflate.o
+  CC      kernel/sched/cpudeadline.o
+  CC      net/core/fib_rules.o
+  CC      drivers/clocksource/arm_arch_timer.o
+  CC      kernel/time/timer_stats.o
+  CC      kernel/trace/trace_events_filter.o
+  CC      kernel/sched/energy.o
+  CC      sound/soc/hisilicon/hi3xxx_asp_dma.o
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/clocksource/arm_arch_timer.c:28:0:
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:77:0: warning: "HVC_GET_VECTORS" redefined
+ #define HVC_GET_VECTORS 0
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:38:0: note: this is the location of the previous definition
+ #define HVC_GET_VECTORS 1
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:84:0: warning: "HVC_SET_VECTORS" redefined
+ #define HVC_SET_VECTORS 1
+ ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/arch/arm64/include/asm/virt.h:46:0: note: this is the location of the previous definition
+ #define HVC_SET_VECTORS 2
+ ^
+  CC      lib/zlib_inflate/infutil.o
+  CC      fs/ext4/symlink.o
+  CC      kernel/sched/stats.o
+  CC      kernel/time/timekeeping_debug.o
+  CC      drivers/clocksource/dummy_timer.o
+  CC      lib/zlib_inflate/inftrees.o
+  CC      net/core/net-traces.o
+  LD      drivers/clocksource/built-in.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/hi1102_comm_defconfig:52: hisi built-in no
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:23: defconfig: /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/plat_1102_v8r2_defconfig
+  CC      lib/zlib_inflate/inflate_syms.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:163: HI110X_VER_COMMIT_ID: 
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:164: HI110X_VER_COMMIT_TIME: 
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:165: HI110X_VERSION: 
+  CC      kernel/sched/cpuacct.o
+  BC      kernel/time/timeconst.h
+  CC      kernel/time/time.o
+  CC      fs/ext4/hash.o
+  CC      sound/soc/hisilicon/hi3650_hi6402.o
+  LD      lib/zlib_inflate/zlib_inflate.o
+  LD      lib/zlib_inflate/built-in.o
+  CC      lib/textsearch.o
+  CC      sound/soc/hisilicon/hi6250_hi6555c.o
+  LD      kernel/sched/built-in.o
+  CC      kernel/freezer.o
+  CC      lib/ts_kmp.o
+  CC      kernel/trace/trace_events_trigger.o
+  LD      kernel/time/built-in.o
+  CC      fs/ext4/resize.o
+  CC      kernel/profile.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_bus_if.o
+  CC      sound/soc/hisilicon/hi6250_hi6402.o
+  LD      net/core/built-in.o
+  CC      lib/ts_bm.o
+  CC      net/ethernet/eth.o
+  CC      lib/ts_fsm.o
+  LD      sound/soc/hisilicon/snd-soc-hi3650.o
+  CC      lib/percpu_counter.o
+  LD      sound/soc/hisilicon/snd-soc-hi3650-hi6402.o
+  LD      sound/soc/hisilicon/snd-soc-hi6250-hi6555c.o
+  LD      sound/soc/hisilicon/snd-soc-hi6250-hi6402.o
+  LD      sound/soc/hisilicon/built-in.o
+  LD      sound/soc/intel/built-in.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_main.o
+  CC      kernel/stacktrace.o
+  LD      sound/soc/jz4740/built-in.o
+  CC      lib/audit.o
+  LD      sound/soc/kirkwood/built-in.o
+  LD      net/ethernet/built-in.o
+  CC      kernel/trace/power-traces.o
+  CC      net/hwnet/hw_event.o
+  LD      sound/soc/mxs/built-in.o
+  CC      lib/compat_audit.o
+  CC      kernel/futex.o
+  LD      sound/soc/nuc900/built-in.o
+  CC      lib/swiotlb.o
+  LD      sound/soc/omap/built-in.o
+  LD      sound/soc/pxa/built-in.o
+  CC      lib/iommu-helper.o
+  LD      sound/soc/qcom/built-in.o
+  LD      sound/soc/rockchip/built-in.o
+  CC      kernel/trace/rpm-traces.o
+  CC      fs/ext4/extents.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_mem.o
+  LD      sound/soc/samsung/built-in.o
+  LD      net/hwnet/built-in.o
+  LD      sound/soc/sh/built-in.o
+  LD      sound/soc/sirf/built-in.o
+  LD      sound/soc/spear/built-in.o
+  LD      sound/soc/tegra/built-in.o
+  CC      kernel/trace/gpu-traces.o
+  LD      sound/soc/txx9/built-in.o
+  LD      sound/soc/ux500/built-in.o
+  CC      net/ipv4/route.o
+  LD      sound/soc/xtensa/built-in.o
+  LD      sound/soc/snd-soc-core.o
+  LD      kernel/trace/built-in.o
+  CC      kernel/futex_compat.o
+  CC      lib/iommu-common.o
+  LD      sound/soc/built-in.o
+  LD      sound/built-in.o
+  CC      kernel/smp.o
+  CC      kernel/uid16.o
+  CC      lib/syscall.o
+  CC      fs/ext4/ext4_jbd2.o
+  CC      lib/nlattr.o
+  CC      net/ipv6/af_inet6.o
+  CC      lib/checksum.o
+  CC      lib/cpu_rmap.o
+  CC      lib/dynamic_queue_limits.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_net.o
+  CC      kernel/module.o
+  CC      net/ipv4/inetpeer.o
+  CC      net/ipv4/protocol.o
+  CC      lib/strncpy_from_user.o
+  CC      lib/strnlen_user.o
+  CC      net/ipv6/anycast.o
+  CC      net/ipv4/ip_input.o
+  CC      lib/net_utils.o
+  CC      lib/wbt.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/lib/wbt.c: In function 'find_page_in_bio':
+/home/petya230/kernel/android_kernel_huawei_hi6250/lib/wbt.c:483:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     wait_queue_head_t *w = &rwb->wait;
+     ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/lib/wbt.c:498:9: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+         struct bio_wait *aio_wait = list_entry(curr, struct bio_wait, wait);
+         ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/lib/wbt.c:504:9: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+         struct bio *bio_search = aio_wait->bio;
+         ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/lib/wbt.c:511:9: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+         unsigned short page_count = bio_search->bi_vcnt;
+         ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/lib/wbt.c: In function 'f2fs_detect_seized_page':
+/home/petya230/kernel/android_kernel_huawei_hi6250/lib/wbt.c:552:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     struct block_device *bi_bdev = sb->s_bdev;
+     ^
+  CC      drivers/connectivity/hisi/platform/oal/oal_hardware.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_schedule.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_pci_if.o
+  CC      fs/ext4/migrate.o
+  CC      net/ipv4/ip_fragment.o
+  CC      net/ipv6/ip6_output.o
+  CC      lib/argv_split.o
+  CC      lib/cmdline.o
+  CC      kernel/kallsyms.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_aes.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_kernel_file.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_cfg80211.o
+  CC      net/ipv4/ip_forward.o
+  CC      fs/ext4/mballoc.o
+  CC      lib/cpumask.o
+  CC      lib/ctype.o
+  CC      kernel/compat.o
+  CC      lib/dec_and_lock.o
+  CC      net/ipv6/ip6_input.o
+  CC      lib/decompress.o
+  CC      lib/decompress_inflate.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_sdio_host.o
+  CC      net/ipv4/ip_options.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_profiling.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_hcc_host.o
+  CC      lib/decompress_unlz4.o
+  CC      net/ipv6/addrconf.o
+  CC      lib/dump_stack.o
+  CC      kernel/cgroup.o
+  CC      net/ipv4/ip_output.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_hcc_test.o
+  CC      lib/earlycpio.o
+  CC      lib/extable.o
+  CC      lib/fdt.o
+  CC      lib/fdt_empty_tree.o
+  CC      lib/fdt_ro.o
+  CC      fs/ext4/block_validity.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_softwdt.o
+  CC      lib/fdt_rw.o
+  CC      drivers/connectivity/hisi/platform/oal/oal_dft.o
+  CC      net/ipv4/ip_sockglue.o
+  CC      drivers/connectivity/hisi/platform/frw/frw_event_deploy.o
+  CC      fs/ext4/move_extent.o
+  CC      drivers/connectivity/hisi/platform/frw/frw_event_main.o
+  CC      lib/fdt_strerror.o
+  CC      lib/fdt_sw.o
+  CC      lib/fdt_wip.o
+  CC      net/ipv6/addrlabel.o
+  CC      fs/ext4/mmp.o
+  CC      lib/flex_proportions.o
+  CC      drivers/connectivity/hisi/platform/frw/frw_event_sched.o
+  CC      drivers/connectivity/hisi/platform/frw/frw_ipc_msgqueue.o
+  CC      kernel/cgroup_freezer.o
+  CC      lib/idr.o
+  CC      lib/int_sqrt.o
+  CC      fs/ext4/indirect.o
+  CC      net/ipv4/inet_hashtables.o
+  CC      lib/ioremap.o
+  CC      net/ipv6/route.o
+  CC      kernel/cgroup_ionice.o
+  CC      lib/irq_regs.o
+  CC      drivers/connectivity/hisi/platform/frw/frw_main.o
+  CC      lib/is_single_threaded.o
+  CC      fs/ext4/extents_status.o
+  CC      lib/klist.o
+  CC      kernel/cpuset.o
+  CC      fs/ext4/xattr.o
+  CC      net/ipv4/inet_timewait_sock.o
+  CC      lib/kobject.o
+  CC      drivers/connectivity/hisi/platform/frw/frw_task.o
+  CC      fs/ext4/xattr_user.o
+  CC      lib/kobject_uevent.o
+  CC      net/ipv4/inet_connection_sock.o
+  CC      fs/ext4/xattr_trusted.o
+  CC      fs/ext4/inline.o
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/fs/ext4/inline.c:15:0:
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/uapi/linux/fiemap.h:43:11: warning: 'struct super_block' declared inside parameter list
+           u64 start, u64 len, u64 *new_len);
+           ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/uapi/linux/fiemap.h:43:11: warning: its scope is only this definition or declaration, which is probably not what you want
+  CC      fs/ext4/readpage.o
+  CC      kernel/stop_machine.o
+  CC      drivers/connectivity/hisi/platform/frw/frw_timer.o
+  CC      fs/ext4/ext4_dump_info.o
+  CC      lib/md5.o
+  CC      net/ipv6/ip6_fib.o
+  CC      kernel/audit.o
+  CC      fs/ext4/acl.o
+  CC      lib/plist.o
+  CC      fs/ext4/xattr_security.o
+  CC      lib/proportions.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/wifi/Makefile:2: HI1102_DRIVER_BUILTIN_PATH drivers/connectivity/hisi
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/hi1102_comm_defconfig:52: hisi built-in no
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/wifi/Makefile:24: defconfig: /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/wifi/wifi_1102_v8r2_defconfig
+  CC      net/ipv4/tcp.o
+  CC      net/ipv4/tcp_input.o
+  CC      drivers/connectivity/hisi/platform/oam/oam_main.o
+  CC      lib/radix-tree.o
+  LD      fs/ext4/ext4.o
+  LD      fs/ext4/built-in.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_config.o
+  CC      kernel/auditfilter.o
+  CC      fs/f2fs/dir.o
+  CC      net/ipv6/ipv6_sockglue.o
+  CC      drivers/connectivity/hisi/platform/oam/oam_alarm.o
+  CC      lib/ratelimit.o
+  CC      drivers/connectivity/hisi/platform/oam/oam_event.o
+  CC      lib/rbtree.o
+  CC      kernel/hisi_hung_task.o
+  CC      lib/seq_buf.o
+  CC      net/ipv4/tcp_output.o
+  CC      fs/f2fs/file.o
+  CC      lib/sha1.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_config_debug.o
+  CC      drivers/connectivity/hisi/platform/oam/oam_log.o
+  CC      lib/show_mem.o
+  CC      net/ipv6/ndisc.o
+  CC      kernel/watchdog.o
+  CC      lib/string.o
+  CC      kernel/seccomp.o
+  CC      lib/timerqueue.o
+  CC      kernel/utsname_sysctl.o
+  CC      lib/vsprintf.o
+  CC      drivers/connectivity/hisi/platform/oam/oam_trace.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_linux_bridge.o
+  CC      net/ipv6/udp.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_main.o
+  CC      net/ipv4/tcp_timer.o
+  CC      kernel/delayacct.o
+  CC      fs/f2fs/inode.o
+  CC      kernel/taskstats.o
+  CC      drivers/connectivity/hisi/platform/oam/oam_statistics.o
+  CC      kernel/tsacct.o
+  CC      net/ipv4/tcp_ipv4.o
+  CC      kernel/tracepoint.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_linux_scan.o
+  CC      fs/f2fs/namei.o
+  GEN     lib/crc32table.h
+  AR      lib/lib.a
+  CC      lib/crc32.o
+  CC      drivers/connectivity/hisi/platform/oam/oam_config.o
+  CC      kernel/elfcore.o
+  CC      net/key/af_key.o
+  CC      net/ipv6/udplite.o
+  CC      fs/f2fs/hash.o
+  CC      kernel/irq_work.o
+  LD      lib/built-in.o
+  CC      kernel/cpu_pm.o
+  CC      net/ipv6/raw.o
+  CC      fs/f2fs/super.o
+  CC      net/ipv4/tcp_cong.o
+  CC      net/ipv4/tcp_minisocks.o
+  CC      drivers/connectivity/hisi/platform/oam/oam_register.o
+  LD      kernel/built-in.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_linux_rx_rsp.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_linux_event.o
+  CC      net/ipv4/tcp_metrics.o
+  CC      net/ipv6/icmp.o
+  CC      net/ipv4/tcp_fastopen.o
+  LD      net/key/built-in.o
+  CC      drivers/connectivity/hisi/platform/oam/oam_linux_netlink.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_regdb.o
+  CC      net/ipv6/mcast.o
+  CC      fs/fat/cache.o
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/include/net/inetpeer.h:15:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/net/ipv4/tcp_metrics.c:16:
+/home/petya230/kernel/android_kernel_huawei_hi6250/net/ipv4/tcp_metrics.c: In function 'tcp_peer_is_proven':
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/net/ipv6.h:437:38: warning: '*((void *)&daddr+8)' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  return ((ul1[0] ^ ul2[0]) | (ul1[1] ^ ul2[1])) == 0UL;
+                                      ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/net/ipv4/tcp_metrics.c:242:30: note: '*((void *)&daddr+8)' was declared here
+  struct inetpeer_addr saddr, daddr;
+                              ^
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/include/net/inetpeer.h:15:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/net/ipv4/tcp_metrics.c:16:
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/net/ipv6.h:437:38: warning: '*((void *)&saddr+8)' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  return ((ul1[0] ^ ul2[0]) | (ul1[1] ^ ul2[1])) == 0UL;
+                                      ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/net/ipv4/tcp_metrics.c:242:23: note: '*((void *)&saddr+8)' was declared here
+  struct inetpeer_addr saddr, daddr;
+                       ^
+  CC      net/ipv4/tcp_offload.o
+  CC      drivers/connectivity/hisi/platform/sdt/sdt_drv.o
+  CC      net/ipv4/datagram.o
+  CC      fs/fat/dir.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_config_acs.o
+  CC      fs/f2fs/inline.o
+  CC      net/ipv4/raw.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_linux_flowctl.o
+  CC      net/netfilter/core.o
+  CC      net/ipv4/udp.o
+  CC      drivers/connectivity/hisi/platform/pm/plat_firmware.o
+  CC      net/netfilter/nf_log.o
+  CC      fs/fat/fatent.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_linux_ioctl.o
+  CC      net/ipv4/udplite.o
+  CC      fs/f2fs/checkpoint.o
+  CC      net/ipv6/reassembly.o
+  CC      net/netfilter/nf_queue.o
+  CC      fs/fat/file.o
+  CC      net/ipv4/udp_offload.o
+  CC      net/netfilter/nf_sockopt.o
+  CC      fs/fat/inode.o
+  CC      net/ipv6/tcp_ipv6.o
+  CC      net/ipv4/arp.o
+  CC      drivers/connectivity/hisi/platform/pm/plat_pm.o
+  CC      drivers/connectivity/hisi/platform/pm/plat_pm_wlan.o
+  CC      net/netfilter/nfnetlink.o
+  CC      fs/f2fs/gc.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/f2fs/gc.c: In function 'gc_thread_func':
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/f2fs/gc.c:81:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   extern int FG_GC_count;
+   ^
+  CC      fs/fat/misc.o
+  CC      net/ipv4/icmp.o
+  CC      net/netfilter/nfnetlink_queue_core.o
+  CC      net/ipv6/ping.o
+  CC      fs/fat/nfs.o
+  CC      fs/f2fs/data.o
+  CC      fs/fat/namei_vfat.o
+  CC      net/ipv6/exthdrs.o
+  CC      fs/fat/namei_msdos.o
+  CC      net/ipv4/devinet.o
+  CC      drivers/connectivity/hisi/platform/pm/plat_cali.o
+  CC      net/netfilter/nfnetlink_log.o
+  CC      drivers/connectivity/hisi/platform/pm/plat_efuse.o
+  LD      fs/fat/fat.o
+  LD      fs/fat/vfat.o
+  LD      fs/fat/msdos.o
+  LD      fs/fat/built-in.o
+  CC      fs/fuse/dev.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_linux_ioctl_debug.o
+  CC      drivers/connectivity/hisi/platform/pm/gps_plat_hi6250.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/fuse/dev.c: In function 'fuse_dev_do_write':
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/fuse/dev.c:1925:68: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   printk(KERN_ERR "Enter Fuse abort routine!! inode addr 0x%x\n ", (unsigned int)(req->misc.release.inode));
+                                                                    ^
+  CC      net/netfilter/nf_conntrack_core.o
+  CC      net/ipv6/datagram.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_linux_atcmdsrv.o
+  CC      fs/f2fs/node.o
+  CC      drivers/connectivity/hisi/platform/main/plat_main.o
+  CC      net/ipv4/af_inet.o
+  CC      net/ipv6/ip6_flowlabel.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/f2fs/node.c: In function 'sync_node_pages':
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/f2fs/node.c:1428:1: warning: label 'lock_node' defined but not used [-Wunused-label]
+ lock_node:
+ ^
+  CC      fs/fuse/dir.o
+  CC      net/netfilter/nf_conntrack_standalone.o
+  CC      net/ipv6/inet6_connection_sock.o
+  CC      drivers/connectivity/hisi/platform/../bfgx/bfgx_low_power.o
+  CC      net/ipv4/igmp.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_linux_cfg80211.o
+  CC      fs/fuse/file.o
+  CC      net/ipv6/sysctl_net_ipv6.o
+  CC      net/netfilter/nf_conntrack_expect.o
+  CC      drivers/connectivity/hisi/platform/../bfgx/bfgx_exception_rst.o
+  CC      net/ipv6/xfrm6_policy.o
+  CC      net/netfilter/nf_conntrack_helper.o
+  CC      net/ipv6/xfrm6_state.o
+  CC      net/ipv4/fib_frontend.o
+  CC      fs/f2fs/segment.o
+  CC      fs/fuse/inode.o
+  CC      net/netfilter/nf_conntrack_proto.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_dfx.o
+  CC      net/ipv6/xfrm6_input.o
+  CC      drivers/connectivity/hisi/platform/../bfgx/bfgx_data_parse.o
+  CC      drivers/cpufreq/cpufreq.o
+  CC      net/ipv4/fib_semantics.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/cpufreq/cpufreq.c: In function 'cpufreq_freq_transition_begin':
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/cpufreq/cpufreq.c:413:6: warning: unused variable 'cpu' [-Wunused-variable]
+  int cpu;
+      ^
+  CC      net/ipv6/xfrm6_output.o
+  CC      fs/fuse/control.o
+  CC      net/netfilter/nf_conntrack_l3proto_generic.o
+  LD      fs/fuse/fuse.o
+  CC      net/ipv4/fib_trie.o
+  CC      net/ipv6/xfrm6_protocol.o
+  CC      drivers/connectivity/hisi/wifi/wal/wal_linux_cfgvendor.o
+  CC      net/netfilter/nf_conntrack_proto_generic.o
+  LD      fs/fuse/built-in.o
+  CC      fs/jbd2/transaction.o
+  CC      drivers/cpufreq/freq_table.o
+  CC      drivers/connectivity/hisi/platform/../bfgx/bfgx_dev.o
+  CC      net/netfilter/nf_conntrack_proto_tcp.o
+  CC      drivers/cpufreq/cpufreq_stats.o
+  CC      fs/f2fs/recovery.o
+  CC      net/ipv6/netfilter.o
+  CC      drivers/connectivity/hisi/wifi/main/main.o
+  CC      drivers/cpufreq/cpufreq_performance.o
+  CC      net/ipv4/inet_fragment.o
+  CC      net/ipv6/fib6_rules.o
+  CC      fs/jbd2/commit.o
+  CC      drivers/cpufreq/cpufreq_powersave.o
+  CC      net/netfilter/nf_conntrack_proto_udp.o
+  CC      fs/f2fs/shrinker.o
+  CC      drivers/cpufreq/cpufreq_userspace.o
+  CC      net/ipv4/ping.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_main.o
+  CC      net/ipv6/proc.o
+  CC      drivers/cpufreq/cpufreq_ondemand.o
+  CC      fs/f2fs/extent_cache.o
+  CC      net/netfilter/nf_conntrack_extend.o
+  CC      fs/jbd2/recovery.o
+  CC      net/ipv6/syncookies.o
+  CC      drivers/connectivity/hisi/platform/../bfgx/bfgx_user_ctrl.o
+  CC      drivers/cpufreq/cpufreq_conservative.o
+  CC      net/netfilter/nf_conntrack_acct.o
+  CC      fs/jbd2/checkpoint.o
+  CC      net/ipv4/ip_tunnel_core.o
+  CC      drivers/cpufreq/cpufreq_blu_active.o
+  CC      net/ipv6/ah6.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_rx_data.o
+  CC      fs/f2fs/f2fs_dump_info.o
+  CC      net/netfilter/nf_conntrack_seqadj.o
+  CC      fs/jbd2/revoke.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/cpufreq/cpufreq_blu_active.c: In function 'cpufreq_interactive_timer':
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/cpufreq/cpufreq_blu_active.c:271:2: error: implicit declaration of function 'cpufreq_notify_utilization' [-Werror=implicit-function-declaration]
+  cpufreq_notify_utilization(pcpu->policy, cpu_load);
+  ^
+  CC      net/ipv4/gre_offload.o
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/list.h:8:0,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/kobject.h:20,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/device.h:17,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/node.h:17,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/cpu.h:16,
+                 from /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/cpufreq/cpufreq_blu_active.c:20:
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/cpufreq/cpufreq_blu_active.c: In function 'cpufreq_interactive_speedchange_task':
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/kernel.h:728:24: warning: 'hvt' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  _min1 < _min2 ? _min1 : _min2; })
+                        ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/cpufreq/cpufreq_blu_active.c:419:8: note: 'hvt' was declared here
+    u64 hvt;
+        ^
+  CC      fs/f2fs/debug.o
+  CC      fs/jbd2/journal.o
+cc1: some warnings being treated as errors
+/home/petya230/kernel/android_kernel_huawei_hi6250/scripts/Makefile.build:266: recipe for target 'drivers/cpufreq/cpufreq_blu_active.o' failed
+make[3]: *** [drivers/cpufreq/cpufreq_blu_active.o] Error 1
+/home/petya230/kernel/android_kernel_huawei_hi6250/scripts/Makefile.build:416: recipe for target 'drivers/cpufreq' failed
+make[2]: *** [drivers/cpufreq] Error 2
+make[2]: *** Waiting for unfinished jobs....
+  CC      drivers/connectivity/hisi/platform/../common/chr_log/chr_devs.o
+  CC      net/netfilter/nf_conntrack_ecache.o
+  CC      net/ipv6/esp6.o
+  CC      fs/kernfs/mount.o
+  CC      net/ipv4/ip_tunnel.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_tx_amsdu.o
+  CC      fs/f2fs/xattr.o
+  CC      fs/kernfs/inode.o
+  CC      net/netfilter/nf_conntrack_proto_dccp.o
+  CC      drivers/connectivity/hisi/platform/board/board.o
+  CC      net/ipv6/ipcomp6.o
+  CC      fs/kernfs/dir.o
+  CC      net/netfilter/nf_conntrack_proto_gre.o
+  CC      net/ipv4/sysctl_net_ipv4.o
+  CC      fs/f2fs/acl.o
+  CC      net/ipv6/xfrm6_tunnel.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_tx_data.o
+  LD      fs/jbd2/jbd2.o
+  LD      fs/jbd2/built-in.o
+  CC      drivers/connectivity/hisi/platform/board/board-hi1102.o
+  CC      fs/kernfs/file.o
+  CC      net/netfilter/nf_conntrack_proto_sctp.o
+  CC      fs/nls/nls_base.o
+  LD      fs/f2fs/f2fs.o
+  LD      fs/f2fs/built-in.o
+  CC      net/ipv4/sysfs_net_ipv4.o
+  CC      fs/kernfs/symlink.o
+  CC      fs/notify/fsnotify.o
+  CC      drivers/connectivity/hisi/platform/board/board-hi1103.o
+  CC      fs/nls/nls_cp437.o
+  CC      net/ipv6/tunnel6.o
+  CC      net/netfilter/nf_conntrack_proto_udplite.o
+  CC      fs/nls/nls_iso8859-1.o
+  LD      fs/kernfs/built-in.o
+  CC      fs/overlayfs/super.o
+  CC      fs/notify/notification.o
+  CC      drivers/connectivity/hisi/platform/../common/oneimage/oneimage.o
+  CC      net/ipv6/xfrm6_mode_transport.o
+  CC      net/netfilter/nf_conntrack_netlink.o
+  CC      net/ipv4/proc.o
+  CC      fs/notify/group.o
+  CC      fs/nls/nls_utf8.o
+  CC      fs/notify/inode_mark.o
+  CC      fs/overlayfs/inode.o
+  LD      fs/nls/built-in.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_user.o
+  CC      drivers/connectivity/hisi/platform/../common/customize/hisi_ini.o
+  CC      net/netfilter/nf_conntrack_amanda.o
+  CC      net/ipv6/xfrm6_mode_tunnel.o
+  CC      fs/notify/mark.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/overlayfs/inode.c: In function 'ovl_copyattr':
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/overlayfs/inode.c:434:48: warning: passing argument 3 of 'security_inode_getsecctx' from incompatible pointer type
+  err = security_inode_getsecctx(from, &secctx, &ctxlen);
+                                                ^
+In file included from /home/petya230/kernel/android_kernel_huawei_hi6250/fs/overlayfs/inode.c:14:0:
+/home/petya230/kernel/android_kernel_huawei_hi6250/include/linux/security.h:1940:5: note: expected 'u32 *' but argument is of type 'size_t *'
+ int security_inode_getsecctx(struct inode *inode, void **ctx, u32 *ctxlen);
+     ^
+  CC      net/ipv4/fib_rules.o
+  CC      fs/overlayfs/dir.o
+  CC      drivers/connectivity/hisi/platform/../common/customize/hisi_customize_wifi.o
+  CC      fs/overlayfs/readdir.o
+  CC      net/ipv6/xfrm6_mode_beet.o
+  CC      fs/notify/vfsmount_mark.o
+  CC      net/netfilter/nf_conntrack_ftp.o
+  CC      net/ipv4/syncookies.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_vap.o
+  CC      fs/overlayfs/copy_up.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_mgmt_bss_comm.o
+  CC      fs/notify/fdinfo.o
+  CC      drivers/connectivity/hisi/platform/driver/plat_sdio.o
+  CC      net/ipv6/mip6.o
+  LD      fs/overlayfs/overlay.o
+  LD      fs/overlayfs/built-in.o
+  CC      fs/notify/dnotify/dnotify.o
+  CC      net/netfilter/nf_conntrack_h323_main.o
+  CC      net/ipv4/esp4.o
+  CC      fs/proc/task_mmu.o
+  LD      fs/notify/dnotify/built-in.o
+  CC      drivers/connectivity/hisi/platform/driver/plat_uart.o
+  LD      fs/notify/fanotify/built-in.o
+  CC      fs/notify/inotify/inotify_fsnotify.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/proc/task_mmu.c: In function 'swapin_pte_range':
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/proc/task_mmu.c:1519:15: warning: unused variable 'page' [-Wunused-variable]
+  struct page *page;
+               ^
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_mgmt_classifier.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_fsm.o
+  CC      net/ipv6/netfilter/ip6_tables.o
+  CC      net/ipv4/xfrm4_mode_beet.o
+  CC      fs/notify/inotify/inotify_user.o
+  CC      fs/proc/inode.o
+  CC      net/netfilter/nf_conntrack_h323_asn1.o
+  CC      net/ipv4/tunnel4.o
+  LD      drivers/connectivity/hisi/platform/plat.o
+  LD      drivers/connectivity/hisi/platform/built-in.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_mgmt_ap.o
+  LD      fs/notify/inotify/built-in.o
+  LD      fs/notify/built-in.o
+  CC      fs/proc/root.o
+  CC      net/ipv4/xfrm4_mode_transport.o
+  CC      net/netfilter/nf_conntrack_irc.o
+  CC      net/ipv4/xfrm4_mode_tunnel.o
+  CC      net/netfilter/nf_conntrack_broadcast.o
+  CC      fs/pstore/inode.o
+  CC      net/ipv6/netfilter/ip6table_filter.o
+  CC      fs/proc/base.o
+  CC      net/ipv4/netfilter.o
+  CC      net/netfilter/nf_conntrack_netbios_ns.o
+  CC      fs/pstore/platform.o
+  CC      net/netfilter/nf_conntrack_pptp.o
+  CC      net/ipv6/netfilter/ip6table_mangle.o
+  CC      net/netfilter/nf_conntrack_sane.o
+  CC      net/ipv4/netfilter/nf_conntrack_l3proto_ipv4_compat.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_mgmt_sta.o
+  CC      net/ipv4/inet_diag.o
+  CC      net/ipv6/netfilter/ip6table_raw.o
+  CC      fs/pstore/ram.o
+  CC      net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.o
+  CC      net/netfilter/nf_conntrack_tftp.o
+  CC      fs/proc/generic.o
+  CC      fs/pstore/ram_core.o
+  CC      net/ipv6/netfilter/ip6table_nat.o
+  CC      net/ipv4/netfilter/nf_conntrack_proto_icmp.o
+  LD      fs/pstore/pstore.o
+  CC      net/ipv6/netfilter/nf_conntrack_l3proto_ipv6.o
+  CC      net/ipv4/tcp_diag.o
+  CC      fs/proc/array.o
+  CC      net/netfilter/nf_nat_core.o
+  CC      net/ipv6/netfilter/nf_conntrack_proto_icmpv6.o
+  LD      fs/pstore/ramoops.o
+  LD      fs/pstore/built-in.o
+  LD      fs/quota/built-in.o
+  CC      fs/ramfs/inode.o
+  CC      net/ipv6/netfilter/nf_nat_l3proto_ipv6.o
+  CC      net/ipv4/netfilter/nf_nat_l3proto_ipv4.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_encap_frame_ap.o
+  CC      fs/ramfs/file-mmu.o
+  CC      net/ipv4/tcp_cubic.o
+  CC      net/ipv6/netfilter/nf_nat_proto_icmpv6.o
+  CC      fs/proc/fd.o
+  LD      fs/ramfs/ramfs.o
+  LD      fs/ramfs/built-in.o
+  CC      fs/sdcardfs/dentry.o
+  CC      net/ipv6/netfilter/nf_nat_masquerade_ipv6.o
+  CC      net/netfilter/nf_nat_proto_unknown.o
+  CC      net/ipv4/netfilter/nf_nat_proto_icmp.o
+  CC      fs/proc/proc_tty.o
+  CC      net/ipv6/netfilter/nf_defrag_ipv6_hooks.o
+  CC      fs/sdcardfs/file.o
+  CC      net/ipv4/xfrm4_policy.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_encap_frame_sta.o
+  CC      net/netfilter/nf_nat_proto_common.o
+  CC      net/ipv4/netfilter/nf_defrag_ipv4.o
+  CC      net/ipv6/netfilter/nf_conntrack_reasm.o
+  CC      fs/proc/cmdline.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/sdcardfs/file.c: In function 'sdcardfs_read_iter':
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/sdcardfs/file.c:49:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  struct dentry *dentry = file->f_path.dentry;
+  ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/sdcardfs/file.c: In function 'sdcardfs_write_iter':
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/sdcardfs/file.c:83:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  struct dentry *dentry = file->f_path.dentry;
+  ^
+  CC      net/ipv6/netfilter/nf_reject_ipv6.o
+  CC      fs/sdcardfs/inode.o
+  CC      fs/proc/consoles.o
+  CC      net/ipv4/netfilter/nf_reject_ipv4.o
+  CC      net/netfilter/nf_nat_proto_udp.o
+  CC      net/ipv4/xfrm4_state.o
+  CC      fs/proc/cpuinfo.o
+  CC      net/netfilter/nf_nat_proto_tcp.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_encap_frame.o
+  CC      fs/sdcardfs/main.o
+  CC      net/ipv6/netfilter/nf_tables_ipv6.o
+  CC      net/ipv4/xfrm4_input.o
+  CC      fs/proc/devices.o
+  CC      net/netfilter/nf_nat_helper.o
+  CC      net/netfilter/nf_nat_redirect.o
+  CC      net/ipv4/netfilter/nf_nat_h323.o
+  CC      fs/sdcardfs/super.o
+  CC      fs/proc/interrupts.o
+  CC      net/ipv6/netfilter/nft_chain_route_ipv6.o
+  CC      net/ipv4/xfrm4_output.o
+  CC      net/netfilter/nf_nat_proto_dccp.o
+  CC      fs/sdcardfs/lookup.o
+  CC      fs/proc/loadavg.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_sme_sta.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_11i.o
+  CC      net/netfilter/nf_nat_proto_udplite.o
+  CC      fs/proc/meminfo.o
+  CC      net/ipv4/netfilter/nf_nat_pptp.o
+  CC      net/ipv6/netfilter/nft_chain_nat_ipv6.o
+  CC      fs/sdcardfs/mmap.o
+  CC      net/ipv4/xfrm4_protocol.o
+  CC      fs/proc/stat.o
+  CC      net/netfilter/nf_nat_proto_sctp.o
+  CC      fs/proc/uptime.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/sdcardfs/mmap.c:101:2: warning: initialization from incompatible pointer type
+  .direct_IO = sdcardfs_direct_IO,
+  ^
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/sdcardfs/mmap.c:101:2: warning: (near initialization for 'sdcardfs_aops.direct_IO')
+  CC      fs/sdcardfs/packagelist.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_uapsd.o
+  CC      net/ipv6/netfilter/ip6t_MASQUERADE.o
+  CC      net/ipv6/netfilter/ip6t_REJECT.o
+  CC      fs/proc/version.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/fs/sdcardfs/packagelist.c:70:12: warning: 'contain_appid_key' defined but not used [-Wunused-function]
+ static int contain_appid_key(struct packagelist_data *pkgl_dat, void *appid)
+            ^
+  CC      net/ipv4/netfilter/nf_nat_masquerade_ipv4.o
+  CC      net/netfilter/nf_nat_amanda.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_config.o
+  CC      fs/proc/softirqs.o
+  CC      net/ipv4/netfilter/nf_nat_proto_gre.o
+  CC      net/ipv6/netfilter/ip6t_SYNPROXY.o
+  CC      fs/sdcardfs/derived_perm.o
+  CC      net/ipv6/sit.o
+  CC      fs/proc/namespaces.o
+  CC      net/netfilter/nf_nat_ftp.o
+  CC      fs/sdcardfs/xattr.o
+  CC      fs/proc/self.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_protection.o
+  CC      net/ipv4/netfilter/ip_tables.o
+  CC      fs/proc/thread_self.o
+  LD      fs/sdcardfs/sdcardfs.o
+  LD      fs/sdcardfs/built-in.o
+  CC      net/netfilter/nf_nat_irc.o
+  LD      net/ipv6/netfilter/nf_conntrack_ipv6.o
+  LD      net/ipv6/netfilter/nf_nat_ipv6.o
+  LD      net/ipv6/netfilter/nf_defrag_ipv6.o
+  LD      net/ipv6/netfilter/built-in.o
+  CC      fs/proc/proc_sysctl.o
+  CC      net/ipv6/addrconf_core.o
+  CC      fs/squashfs/block.o
+  CC      fs/squashfs/cache.o
+  CC      net/netfilter/nf_nat_tftp.o
+  CC      net/ipv6/exthdrs_core.o
+  CC      net/ipv6/ip6_checksum.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_frag.o
+  CC      net/ipv4/netfilter/iptable_filter.o
+  CC      fs/proc/proc_net.o
+  CC      fs/squashfs/dir.o
+  CC      net/netfilter/nf_synproxy_core.o
+  CC      net/ipv4/netfilter/iptable_mangle.o
+  CC      net/ipv6/ip6_icmp.o
+  CC      net/ipv6/output_core.o
+  CC      fs/squashfs/export.o
+  CC      net/ipv4/netfilter/iptable_nat.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_crypto_tkip.o
+  CC      fs/proc/kmsg.o
+  CC      fs/squashfs/file.o
+  CC      net/netfilter/nf_tables_core.o
+  CC      net/ipv6/protocol.o
+  CC      fs/proc/page.o
+  CC      net/ipv6/ip6_offload.o
+  CC      net/ipv4/netfilter/iptable_raw.o
+  CC      net/netfilter/nf_tables_api.o
+  CC      fs/squashfs/fragment.o
+  CC      net/ipv6/tcpv6_offload.o
+  CC      fs/proc/device_status_info.o
+  CC      net/ipv4/netfilter/iptable_security.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_chan_mgmt.o
+  CC      fs/squashfs/id.o
+  CC      net/ipv6/udp_offload.o
+  CC      fs/squashfs/inode.o
+  CC      fs/proc/hisi/hardware_info.o
+  CC      net/ipv6/exthdrs_offload.o
+  CC      net/ipv4/netfilter/ipt_ah.o
+  CC      net/ipv6/inet6_hashtables.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_m2u.o
+  CC      fs/proc/hisi/meminfo_lite.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_smps.o
+  CC      fs/squashfs/namei.o
+  LD      net/ipv6/ipv6.o
+  CC      fs/squashfs/super.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_data_acq.o
+  CC      fs/proc/hisi/process_reclaim_info.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_rx_filter.o
+  CC      fs/squashfs/symlink.o
+  CC      net/ipv4/netfilter/ipt_MASQUERADE.o
+  CC      fs/squashfs/decompressor.o
+  CC      fs/proc/hisi/protect_lru.o
+  LD      net/ipv6/built-in.o
+  CC      fs/squashfs/file_direct.o
+  CC      fs/squashfs/page_actor.o
+  CC      net/netlink/af_netlink.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_proxy_arp.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_hcc_adapt.o
+  CC      net/ipv4/netfilter/ipt_REJECT.o
+  LD      fs/proc/hisi/built-in.o
+  CC      fs/squashfs/decompressor_multi_percpu.o
+  CC      net/netfilter/nft_immediate.o
+  LD      fs/proc/proc.o
+  LD      fs/proc/built-in.o
+  CC      fs/squashfs/xattr.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_reset.o
+  CC      fs/sysfs/file.o
+  CC      fs/squashfs/xattr_id.o
+  CC      net/netfilter/nft_cmp.o
+  CC      net/ipv4/netfilter/ipt_SYNPROXY.o
+  CC      net/netfilter/nft_lookup.o
+  CC      fs/sysfs/dir.o
+  CC      fs/squashfs/lz4_wrapper.o
+  CC      fs/squashfs/lzo_wrapper.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_scan.o
+  CC      fs/sysfs/symlink.o
+  CC      fs/squashfs/xz_wrapper.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_p2p.o
+  CC      fs/squashfs/zlib_wrapper.o
+  CC      net/netfilter/nft_dynset.o
+  CC      net/netlink/genetlink.o
+  CC      net/ipv4/netfilter/arp_tables.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_device.o
+  CC      fs/sysfs/mount.o
+  LD      fs/squashfs/squashfs.o
+  LD      fs/squashfs/built-in.o
+  CC      fs/tracefs/inode.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_resource.o
+  CC      fs/sysfs/group.o
+  CC      net/netfilter/nft_bitwise.o
+  LD      fs/tracefs/tracefs.o
+  LD      fs/tracefs/built-in.o
+  CC      fs/eventpoll.o
+  LD      fs/sysfs/built-in.o
+  CC      fs/anon_inodes.o
+  LD      net/netlink/built-in.o
+  CC      net/packet/af_packet.o
+  CC      fs/signalfd.o
+  CC      net/netfilter/nft_byteorder.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_wapi_wpi.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_wapi_sms4.o
+  CC      net/ipv4/netfilter/arpt_mangle.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_wapi.o
+  CC      fs/timerfd.o
+  CC      fs/eventfd.o
+  CC      net/ipv4/netfilter/arptable_filter.o
+  CC      net/netfilter/nft_payload.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_cali_mgmt.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_cali_dpd.o
+  CC      fs/aio.o
+  LD      net/ipv4/netfilter/nf_conntrack_ipv4.o
+  LD      net/ipv4/netfilter/nf_nat_ipv4.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_custom_security.o
+  LD      net/ipv4/netfilter/built-in.o
+  LD      net/ipv4/built-in.o
+  CC      fs/locks.o
+  CC      net/netfilter/nft_nat.o
+  CC      net/sched/sch_generic.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_blockack.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_dfs.o
+  LD      net/packet/built-in.o
+  CC      net/unix/af_unix.o
+  CC      net/netfilter/x_tables.o
+  CC      fs/compat.o
+  CC      fs/compat_ioctl.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_psm_ap.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_dfx.o
+  CC      net/sched/sch_mq.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_edca_opt.o
+  CC      fs/binfmt_script.o
+  CC      net/sched/sch_api.o
+  CC      net/netfilter/xt_tcpudp.o
+  CC      net/unix/garbage.o
+  CC      fs/binfmt_elf.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_arp_offload.o
+  CC      fs/compat_binfmt_elf.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_verify/hmac_test_main.o
+  CC      net/netfilter/xt_mark.o
+  CC      net/sched/sch_blackhole.o
+  CC      net/unix/sysctl_net_unix.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_tcp_opt.o
+  CC      fs/mbcache.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_auto_adjust_freq.o
+  CC      fs/posix_acl.o
+  CC      net/netfilter/xt_connmark.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_roam_alg.o
+  CC      net/sched/cls_api.o
+  LD      net/unix/unix.o
+  LD      net/unix/built-in.o
+  CC      net/netfilter/xt_nat.o
+  CC      fs/coredump.o
+  CC      net/wireless/core.o
+  CC      fs/drop_caches.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_roam_connect.o
+  CC      net/sched/act_api.o
+  CC      fs/dcookies.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_roam_main.o
+  CC      net/netfilter/xt_CLASSIFY.o
+  LD      fs/built-in.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_traffic_classify.o
+  CC      net/netfilter/xt_CONNSECMARK.o
+  CC      net/netfilter/xt_DSCP.o
+  CC      net/netfilter/xt_NETMAP.o
+  CC      net/sched/act_police.o
+  CC      net/wireless/sysfs.o
+  CC      net/netfilter/xt_NFLOG.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_proxysta.o
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_wmmac.o
+  CC      net/netfilter/xt_NFQUEUE.o
+  CC      net/netfilter/xt_REDIRECT.o
+  CC      net/sched/act_gact.o
+  CC      net/netfilter/xt_SECMARK.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/net/wireless/sysfs.c:90:13: warning: 'cfg80211_leave_all' defined but not used [-Wunused-function]
+ static void cfg80211_leave_all(struct cfg80211_registered_device *rdev)
+             ^
+  CC      drivers/connectivity/hisi/wifi/hmac/hmac_btcoex.o
+  CC      net/netfilter/xt_TPROXY.o
+  CC      net/wireless/radiotap.o
+  CC      net/sched/act_mirred.o
+  CC      net/netfilter/xt_TCPMSS.o
+  CC      drivers/connectivity/hisi/wifi/dmac/mac_device.o
+  CC      net/netfilter/xt_TRACE.o
+  CC      net/wireless/util.o
+  CC      net/netfilter/xt_IDLETIMER.o
+  CC      drivers/connectivity/hisi/wifi/dmac/mac_frame.o
+  CC      net/sched/sch_fifo.o
+  CC      net/netfilter/xt_comment.o
+  CC      drivers/connectivity/hisi/wifi/dmac/mac_user.o
+  CC      net/netfilter/xt_connbytes.o
+  CC      drivers/connectivity/hisi/wifi/dmac/mac_vap.o
+  CC      net/netfilter/xt_connlimit.o
+  CC      net/sched/sch_htb.o
+  CC      net/netfilter/xt_conntrack.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/net/wireless/util.c: In function 'cfg80211_process_wdev_events':
+/home/petya230/kernel/android_kernel_huawei_hi6250/net/wireless/util.c:872:3: warning: enumeration value 'EVENT_DRV_LAST' not handled in switch [-Wswitch]
+   switch (ev->type) {
+   ^
+  CC      net/sched/cls_u32.o
+  CC      net/netfilter/xt_dscp.o
+  CC      drivers/connectivity/hisi/wifi/dmac/mac_regdomain.o
+  CC      net/netfilter/xt_ecn.o
+  CC      net/netfilter/xt_hashlimit.o
+  CC      net/sched/ematch.o
+  CC      net/wireless/reg.o
+  CC      drivers/connectivity/hisi/wifi/dmac/mac_ie.o
+  CC      net/sched/em_u32.o
+  CC      drivers/connectivity/hisi/wifi/dmac/mac_resource.o
+  CC      drivers/connectivity/hisi/wifi/dmac/mac_board.o
+  CC      net/netfilter/xt_helper.o
+  LD      net/sched/built-in.o
+  CC      drivers/connectivity/hisi/wifi/dmac/mac_pm.o
+  CC      net/netfilter/xt_hl.o
+  CC      net/xfrm/xfrm_policy.o
+  CC      net/netfilter/xt_iprange.o
+  CC      drivers/connectivity/hisi/wifi/dmac/mac_data.o
+  CC      net/wireless/scan.o
+  CC      net/netfilter/xt_length.o
+  CC      net/wireless/nl80211.o
+  CC      net/wireless/mlme.o
+  CC      net/netfilter/xt_limit.o
+  CC      net/netfilter/xt_mac.o
+  CC      net/netfilter/xt_multiport.o
+  CC      net/netfilter/xt_pkttype.o
+  LD      drivers/connectivity/hisi/wifi/wifi.o
+  CC      net/netfilter/xt_policy.o
+  LD      drivers/connectivity/hisi/wifi/built-in.o
+  CC      net/netfilter/xt_qtaguid_print.o
+  LD      drivers/connectivity/hisi/built-in.o
+  CC      net/xfrm/xfrm_state.o
+  CC      net/netfilter/xt_qtaguid.o
+  LD      drivers/connectivity/built-in.o
+  CC      net/wireless/ibss.o
+  CC      net/wireless/sme.o
+  CC      net/netfilter/xt_quota.o
+  CC      net/netfilter/xt_quota2.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/Makefile:1020: recipe for target 'drivers' failed
+make[1]: *** [drivers] Error 2
+make[1]: *** Waiting for unfinished jobs....
+  CC      net/compat.o
+  CC      net/netfilter/xt_socket.o
+  CC      net/netfilter/xt_state.o
+  CC      net/sysctl_net.o
+  CC      net/xfrm/xfrm_hash.o
+  CC      net/wireless/chan.o
+  CC      net/activity_stats.o
+  CC      net/netfilter/xt_statistic.o
+  CC      net/xfrm/xfrm_input.o
+  CC      net/netfilter/xt_string.o
+  CC      net/wireless/ethtool.o
+  CC      net/netfilter/xt_time.o
+  CC      net/wireless/mesh.o
+  CC      net/wireless/ap.o
+  CC      net/netfilter/xt_u32.o
+  LD      net/netfilter/netfilter.o
+  LD      net/netfilter/nfnetlink_queue.o
+  LD      net/netfilter/nf_conntrack.o
+  LD      net/netfilter/nf_conntrack_h323.o
+  LD      net/netfilter/nf_nat.o
+  CC      net/wireless/trace.o
+  LD      net/netfilter/nf_tables.o
+  CC      net/wireless/ocb.o
+  CC      net/xfrm/xfrm_output.o
+  CC      net/xfrm/xfrm_sysctl.o
+  CC      net/wireless/wext-compat.o
+  CC      net/wireless/wext-sme.o
+  LD      net/netfilter/built-in.o
+  CC      net/wireless/wext-core.o
+  CC      net/xfrm/xfrm_replay.o
+  CC      net/xfrm/xfrm_algo.o
+  CC      net/xfrm/xfrm_user.o
+  CC      net/wireless/wext-proc.o
+  CC      net/xfrm/xfrm_ipcomp.o
+  CC      net/wireless/wext-spy.o
+  CC      net/wireless/wext-priv.o
+  LD      net/xfrm/built-in.o
+  LD      net/wireless/cfg80211.o
+  LD      net/wireless/built-in.o
+  LD      net/built-in.o
+make[1]: Leaving directory '/home/petya230/kernel/out'
+Makefile:148: recipe for target 'sub-make' failed
+make: *** [sub-make] Error 2
