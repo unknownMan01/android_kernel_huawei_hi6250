@@ -1,0 +1,8 @@
+--- arch/arm64/configs/merge_hi6250_defconfig
++++ arch/arm64/configs/merge_hi6250_defconfig
+@@ -4582,3 +4582,5 @@ CONFIG_LIBFDT=y
+ CONFIG_ARCH_HAS_SG_CHAIN=y
+ CONFIG_WBT=y
+ # CONFIG_QUASI is not set
++CONFIG_HOTPLUG=y
++CONFIG_MAKO_HOTPLUG=y
