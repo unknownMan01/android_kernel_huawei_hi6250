@@ -69,3 +69,7 @@ config ZEN_DECISION
 	  by disabling these services.
 
 	  If unsure, say N.
+
+config HIMA_HOTPLUG
+        default n
+

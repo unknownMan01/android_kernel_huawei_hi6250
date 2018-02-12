@@ -8,3 +8,5 @@ obj-$(CONFIG_BRICKED_HOTPLUG) += bricked_hotplug.o
 obj-$(CONFIG_FAST_HOTPLUG) += fast_hotplug.o
 obj-$(CONFIG_LAZY_HOTPLUG) += lazyplug.o
 obj-$(CONFIG_ZEN_DECISION) += zen_decision.o
+obj-$(CONFIG_HIMA_HOTPLUG) += hima_hotplug.o
+
