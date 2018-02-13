@@ -1,0 +1,8 @@
+--- arch/arm64/Kconfig
++++ arch/arm64/Kconfig
+@@ -670,4 +670,5 @@ endif
+ 
+ source "lib/Kconfig"
+ source "arch/arm64/hotplug/autosmp/Kconfig"
++source "arch/arm64/hotplug/Kconfig"
+ 

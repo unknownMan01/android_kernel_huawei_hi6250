@@ -12,14 +12,11 @@
  * GNU General Public License for more details.
  *
  */
-
 #ifndef _LINUX_EARLYSUSPEND_H
 #define _LINUX_EARLYSUSPEND_H
-
 #ifdef CONFIG_HAS_EARLYSUSPEND
 #include <linux/list.h>
 #endif
-
 /* The early_suspend structure defines suspend and resume hooks to be called
  * when the user visible sleep state of the system changes, and a level to
  * control the order. They can be used to turn off the screen and input
@@ -43,7 +40,6 @@ struct early_suspend {
 	void (*resume)(struct early_suspend *h);
 #endif
 };
-
 #ifdef CONFIG_HAS_EARLYSUSPEND
 void register_early_suspend(struct early_suspend *handler);
 void unregister_early_suspend(struct early_suspend *handler);
@@ -51,6 +47,4 @@ void unregister_early_suspend(struct early_suspend *handler);
 #define register_early_suspend(handler) do { } while (0)
 #define unregister_early_suspend(handler) do { } while (0)
 #endif
-
 #endif
-
