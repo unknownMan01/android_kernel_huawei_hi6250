@@ -30,7 +30,7 @@
 #define HOTPLUG_INFO_TAG	"[HOTPLUG] : "
 
 #ifndef CONFIG_NR_CPUS
-#define CONFIG_NR_CPUS		4
+#define CONFIG_NR_CPUS		8
 #endif
 
 #define REFRESH_RATE		100  /* ms */
