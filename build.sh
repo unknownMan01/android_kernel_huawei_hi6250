@@ -2,7 +2,7 @@
 # make mrproper
 export ARCH=arm64
 export CROSS_COMPILE=../gcc/bin/aarch64-linux-android-
-export KBUILD_BUILD_USER="Petya230"
+export KBUILD_BUILD_USER="IMPEACH TRUMP!"
 export KBUILD_BUILD_HOST="CodeOfHonor.Tech"
 echo -e "\e[31mRemove out"
 rm -r ../out
