@@ -594,6 +594,8 @@ void bL_hifreq_hotplug_init(void)
 	data->last_down_time = data->last_up_time;
 
 	/* physical cpu 4&5(logical 6&7) to be hotplugged up and down */
+	cpumask_set_cpu(4, &hotplug_cpumask);
+	cpumask_set_cpu(5, &hotplug_cpumask);
 	cpumask_set_cpu(6, &hotplug_cpumask);
 	cpumask_set_cpu(7, &hotplug_cpumask);
 
