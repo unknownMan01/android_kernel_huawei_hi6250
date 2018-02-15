@@ -17,60 +17,82 @@ drivers/mmc/host/Kconfig:601:warning: multi-line strings not supported
   CHK     include/config/kernel.release
   GEN     /home/petya230/kernel/out/Makefile
   CHK     include/generated/uapi/linux/version.h
+  UPD     include/config/kernel.release
+  Using /home/petya230/kernel/android_kernel_huawei_hi6250 as source for kernel
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/hi1102_comm_defconfig:52: hisi built-in no
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:23: defconfig: /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/plat_1102_v8r2_defconfig
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:163: HI110X_VER_COMMIT_ID: 
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:164: HI110X_VER_COMMIT_TIME: 
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:165: HI110X_VERSION: 
-find lcdkit hisi folder, include it now!find tpkit hisi adapter folder, include it now!
-
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/wifi/Makefile:2: HI1102_DRIVER_BUILTIN_PATH drivers/connectivity/hisi
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/hi1102_comm_defconfig:52: hisi built-in no
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/wifi/Makefile:24: defconfig: /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/wifi/wifi_1102_v8r2_defconfig
-  Using /home/petya230/kernel/android_kernel_huawei_hi6250 as source for kernel
-  CHK     include/generated/utsrelease.h
   DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_DSDS_config.dtb
   DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_default_config.dtb
+find lcdkit hisi folder, include it now!
+find tpkit hisi adapter folder, include it now!
   DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_SRLTE_config.dtb
   DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_6555codec_noRF_config.dtb
   DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_noRF_config.dtb
+  CHK     include/generated/bounds.h
   DTC     arch/arm64/boot/dts/auto-generate/hi6250_hi6250_fpga_config.dtb
+  CHK     include/generated/asm-offsets.h
   DTC     arch/arm64/boot/dts/auto-generate/hi6250_udp_6555codec_config.dtb
   DTC     arch/arm64/boot/dts/auto-generate/hi6250_emulator_config.dtb
-  CHK     include/generated/bounds.h
-  CHK     include/generated/asm-offsets.h
   CALL    /home/petya230/kernel/android_kernel_huawei_hi6250/scripts/checksyscalls.sh
   CHK     include/generated/compile.h
-  CC      block/tripndroid-iosched.o
-  LD      block/built-in.o
+  CC      init/version.o
+  CC      kernel/sys.o
+  CC      drivers/base/firmware_class.o
+  LD      init/built-in.o
+  LD      drivers/base/built-in.o
+  CC [M]  net/wireguard/main.o
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/hi1102_comm_defconfig:52: hisi built-in no
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:23: defconfig: /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/plat_1102_v8r2_defconfig
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:163: HI110X_VER_COMMIT_ID: 
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:164: HI110X_VER_COMMIT_TIME: 
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/Makefile:165: HI110X_VERSION: 
-find lcdkit hisi folder, include it now!
-find tpkit hisi adapter folder, include it now!
+  CC      drivers/cpufreq/cpufreq_cultivation.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/drivers/cpufreq/cpufreq_cultivation.c:33:34: fatal error: linux/state_notifier.h: No such file or directory
+ #include <linux/state_notifier.h>
+                                  ^
+compilation terminated.
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/wifi/Makefile:2: HI1102_DRIVER_BUILTIN_PATH drivers/connectivity/hisi
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/platform/hi1102_comm_defconfig:52: hisi built-in no
 /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/wifi/Makefile:24: defconfig: /home/petya230/kernel/android_kernel_huawei_hi6250/drivers/connectivity/hisi/wifi/wifi_1102_v8r2_defconfig
-  LINK    vmlinux
-  LD      vmlinux.o
-  MODPOST vmlinux.o
-WARNING: modpost: Found 13 section mismatch(es).
-To see full details build your kernel with:
-'make CONFIG_DEBUG_SECTION_MISMATCH=y'
-  GEN     .version
-  CHK     include/generated/compile.h
-  UPD     include/generated/compile.h
-  CC      init/version.o
-  LD      init/built-in.o
-  KSYM    .tmp_kallsyms1.o
-  KSYM    .tmp_kallsyms2.o
-  LD      vmlinux
-  SORTEX  vmlinux
-  SYSMAP  System.map
-  OBJCOPY arch/arm64/boot/Image
-  Building modules, stage 2.
-  MODPOST 6 modules
-  GZIP    arch/arm64/boot/Image.gz
+/home/petya230/kernel/android_kernel_huawei_hi6250/scripts/Makefile.build:266: recipe for target 'drivers/cpufreq/cpufreq_cultivation.o' failed
+make[3]: *** [drivers/cpufreq/cpufreq_cultivation.o] Error 1
+/home/petya230/kernel/android_kernel_huawei_hi6250/scripts/Makefile.build:416: recipe for target 'drivers/cpufreq' failed
+make[2]: *** [drivers/cpufreq] Error 2
+make[2]: *** Waiting for unfinished jobs....
+  CC [M]  net/wireguard/noise.o
+  CC [M]  net/wireguard/device.o
+  CC [M]  net/wireguard/peer.o
+  CC [M]  net/wireguard/timers.o
+  CC      kernel/trace/trace.o
+  CC [M]  net/wireguard/queueing.o
+  CC [M]  net/wireguard/send.o
+  CC [M]  net/wireguard/receive.o
+  CC [M]  net/wireguard/socket.o
+  CC [M]  net/wireguard/hashtables.o
+  CC [M]  net/wireguard/allowedips.o
+/home/petya230/kernel/android_kernel_huawei_hi6250/Makefile:1020: recipe for target 'drivers' failed
+make[1]: *** [drivers] Error 2
+make[1]: *** Waiting for unfinished jobs....
+  CC [M]  net/wireguard/ratelimiter.o
+  CC [M]  net/wireguard/cookie.o
+  CC [M]  net/wireguard/netlink.o
+  CC [M]  net/wireguard/crypto/curve25519.o
+  CC [M]  net/wireguard/crypto/chacha20poly1305.o
+  CC [M]  net/wireguard/crypto/blake2s.o
+  LD      kernel/trace/built-in.o
+  CC [M]  net/wireguard/compat/siphash/siphash.o
+  CC [M]  net/wireguard/compat/dst_cache/dst_cache.o
+  CC      kernel/module.o
+  LD [M]  net/wireguard/wireguard.o
+  LD      kernel/built-in.o
 make[1]: Leaving directory '/home/petya230/kernel/out'
+Makefile:148: recipe for target 'sub-make' failed
+make: *** [sub-make] Error 2
