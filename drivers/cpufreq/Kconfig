@@ -103,9 +103,9 @@ config CPU_FREQ_DEFAULT_GOV_SMARTMAX_EPS
           Use the CPUFreq governor 'smartmax eps' as default
 
 config CPU_FREQ_DEFAULT_GOV_SMARTASS2
-  	bool "smartassV2"
-  	select CPU_FREQ_GOV_SMARTASS2
-  	help
+	bool "smartassV2"
+	select CPU_FREQ_GOV_SMARTASS2
+	help
 
 config CPU_FREQ_DEFAULT_GOV_PERFORMANCE
 	bool "performance"
@@ -164,6 +164,12 @@ config CPU_FREQ_DEFAULT_GOV_BLU_ACTIVE
 	  you to get a full dynamic cpu frequency capable system by simply
 	  loading your cpufreq low-level hardware driver, using the
 	  'interactive' governor for latency-sensitive workloads.
+
+config CPU_FREQ_DEFAULT_GOV_TRIPNDROID
+	bool "tripndroid"
+	select CPU_FREQ_GOV_TRIPNDROID
+	help
+	  Select tripndroid cpu governor as default
 
 config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	bool "interactive"
@@ -233,10 +239,10 @@ config CPU_FREQ_GOV_SMARTMAX_EPS
           'smartmax EPS' is the extreme powersaving version of smartmax
 
 config CPU_FREQ_GOV_SMARTASS2
-  	tristate "'smartassV2' cpufreq governor"
-  	depends on CPU_FREQ
-  	help
-    	'smartassV2' - a "smart" governor
+	tristate "'smartassV2' cpufreq governor"
+	depends on CPU_FREQ
+	help
+	'smartassV2' - a "smart" governor
 
 config CPU_FREQ_GOV_INTERACTIVE_PRO
 	tristate "'interactive_pro' cpufreq governor"
@@ -353,6 +359,14 @@ config CPU_FREQ_GOV_BLU_ACTIVE
 	  module will be called cpufreq_blu_active.
 
 	  If in doubt, say N.
+
+config CPU_FREQ_GOV_TRIPNDROID
+    tristate "'tripndroid' cpufreq governor"
+    depends on CPU_FREQ
+    help
+	  Custom cpu governor designed specificly for multi cpu mobile devices.
+	  Aiming at a balance between performance and battery lifetime, but it
+	  hangs a little bit more towards performance at low latencys.
 
 
 config CPU_FREQ_GOV_SCHED

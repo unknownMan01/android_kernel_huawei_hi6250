@@ -1,5 +1,6 @@
 # make clea
 # make mrproper
+clear
 export ARCH=arm64
 export CROSS_COMPILE=../gcc/bin/aarch64-linux-android-
 export KBUILD_BUILD_USER="IMPEACH_TRUMP!"
