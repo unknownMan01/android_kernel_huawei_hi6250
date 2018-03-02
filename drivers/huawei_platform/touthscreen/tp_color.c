@@ -20,7 +20,7 @@ HWLOG_REGIST();
 #define WHITE	0xE1
 #define BLACK	0xD2
 #define PINK	0xC3
-#define RED		0xB4
+#define RED	0xB4
 #define YELLOW	0xA5
 #define BLUE	0x96
 #define GOLD  0x87
