@@ -11,4 +11,4 @@ export KBUILD_BUILD_HOST="CodeOfHonor.Tech"
 #mkdir ../out
 echo -e "\e[97mBuild"
 make ARCH=arm64 O=../out merge_hi6250_defconfig
-time make ARCH=arm64 O=../out -j4 |& tee ../szar
+time make ARCH=arm64 O=../out -j2 |& tee ../szar

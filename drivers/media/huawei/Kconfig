@@ -22,7 +22,7 @@ menuconfig ION_FOR_EMULATOR
 config USE_CAMERA3_ARCH
     tristate "Support Camera3 driver"
     depends on HUAWEI_CAMERA
-    default n
+    default y
     ---help---
         Hisilicon K3 camera3 driver.
 
