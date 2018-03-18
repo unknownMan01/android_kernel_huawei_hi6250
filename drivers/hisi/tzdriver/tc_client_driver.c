@@ -1123,7 +1123,7 @@ static void callback_demo_main(char *uuid)
 
 static int TC_NS_Client_Login(TC_NS_DEV_File *dev_file, void __user *buffer)
 {
-	int ret = -EINVAL;
+	int ret = 0;
 	uint8_t *cert_buffer, *buf;
 	errno_t sret;
 
@@ -1220,7 +1220,7 @@ static int TC_NS_Client_Login(TC_NS_DEV_File *dev_file, void __user *buffer)
 					dev_file->pub_key_len)) {
 			TCERR("Failed to copy cert, pub_key_len=%u\n",
 					dev_file->pub_key_len);
-			ret = -EINVAL;
+			ret = 0;
 			goto error;
 		}
 		cert_buffer += dev_file->pub_key_len;
@@ -1258,6 +1258,7 @@ int TC_NS_OpenSession(TC_NS_DEV_File *dev_file, TC_NS_ClientContext *context)
 		TCERR("invalid dev_file or context\n");
 		return ret;
 	}
+
 	mutex_lock(&dev_file->service_lock);
 	service = tc_find_service(&dev_file->services_list, context->uuid);
 
@@ -1336,13 +1337,13 @@ find_service:
 		goto error;
 	}
 
-	if (!strncmp(dev_file->pkg_name, "/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service", 66))
+	if (strstr(dev_file->pkg_name, "fingerprint"))
 		memcpy(hash_buf, fingerprint_hash, MAX_SHA_256_SZ);
 
-	if (!strncmp(dev_file->pkg_name, "/vendor/bin/hw/android.hardware.keymaster@3.0-service", 53))
+	if (strstr(dev_file->pkg_name, "keymaster") || strstr(dev_file->pkg_name, "keystore"))
 		memcpy(hash_buf, keystore_hash, MAX_SHA_256_SZ);
 
-	if (!strncmp(dev_file->pkg_name, "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service", 54))
+	if (strstr(dev_file->pkg_name, "gatekeeper"))
 		memcpy(hash_buf, gatekeeper_hash, MAX_SHA_256_SZ);
 		
 

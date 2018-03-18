@@ -654,17 +654,17 @@ int tc_client_call(TC_NS_ClientContext *client_context,
 		return -EINVAL;
 	}
 
-	if (!strncmp(dev_file->pkg_name, "/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service", 66)) {
+	if (strstr(dev_file->pkg_name, "fingerprint")) {
 		strncpy(dev_file->pkg_name, "/system/bin/fingerprintd", 66);
 		dev_file->pkg_name_len = 24;
 	}
 
-	if (!strncmp(dev_file->pkg_name, "/vendor/bin/hw/android.hardware.keymaster@3.0-service", 53)) {
+	if (strstr(dev_file->pkg_name, "keymaster") || strstr(dev_file->pkg_name, "keystore")) {
 		strncpy(dev_file->pkg_name, "/system/bin/keystore", 53);
 		dev_file->pkg_name_len = 20;
 	}
 
-	if (!strncmp(dev_file->pkg_name, "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service", 54)) {
+	if (strstr(dev_file->pkg_name, "gatekeeper")) {
 		strncpy(dev_file->pkg_name, "/system/bin/gatekeeperd", 53);
 		dev_file->pkg_name_len = 23;
 	}
