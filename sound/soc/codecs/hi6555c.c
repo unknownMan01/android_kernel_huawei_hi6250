@@ -4666,16 +4666,18 @@ struct snd_soc_dai_driver hi6555c_dai[] = {
 
 static void set_headset_keys_config(struct hi6555c_priv *priv)
 {
+
+// Revert this back to stock values to fix soft reboot on Honor 6X
+	
 	/* config the headset */
-	CoHPriv = priv;
-	priv->headset_voltage.hs_3_pole_max_voltage = hs_3_pole_max_voltage;
-	logi("CodeofHonor: hs_3_pole_max_voltage set to '%d'", hs_3_pole_max_voltage);
+	priv->headset_voltage.hs_3_pole_max_voltage = 8;
 	priv->headset_voltage.hs_4_pole_min_voltage = 900;
 	priv->headset_voltage.hs_4_pole_max_voltage = 2565;
 	logi("headset_voltage {3pole=%d, 4pole=(%d-%d)}\n",
 			priv->headset_voltage.hs_3_pole_max_voltage,
 			priv->headset_voltage.hs_4_pole_min_voltage,
-			priv->headset_voltage.hs_4_pole_max_voltage);
+            priv->headset_voltage.hs_4_pole_max_voltage);
+
 
 	/* config the keys */
 	priv->btn_voltage.key_up_min_value = 1350;
