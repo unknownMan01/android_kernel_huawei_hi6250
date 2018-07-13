@@ -46,9 +46,9 @@ enum CLUSTER_IDX {
 	MAX_CLUSTERS,
 };
 
-#define MAX_FREQ_LIMIT 2304000000
-#define EFUSE_TABLE_LEN 4
-#define DEFAULT_EFUSE_FREQ_LEVEL 6
+#define MAX_FREQ_LIMIT 2716000000
+#define EFUSE_TABLE_LEN 7
+#define DEFAULT_EFUSE_FREQ_LEVEL 7
 #define EFUSE_ADJUST_LEN 1
 
 enum SOC_EFUSE_FREQ_ENUM {
@@ -66,10 +66,10 @@ enum SOC_EFUSE_FREQ_ENUM {
 /*the table will sync with dts*/
 static struct cpu_freq *freqs_table[MAX_CLUSTERS];
 unsigned int soc_efuse_freq_table[EFUSE_TABLE_LEN] = {
-	SOC_EFUSE_FREQ_6,
-	SOC_EFUSE_FREQ_6,
 	SOC_EFUSE_FREQ_7,
-	SOC_EFUSE_FREQ_6,
+	SOC_EFUSE_FREQ_7,
+	SOC_EFUSE_FREQ_7,
+	SOC_EFUSE_FREQ_7,
 };
 
 static bool g_support_efuse;

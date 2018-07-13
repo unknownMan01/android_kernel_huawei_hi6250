@@ -80,6 +80,7 @@
 				2016000	1000000
 				2112000	1000000
 				2362000 1100000
+				2516000 1200000
 			>;
 		};
 		big3:cpu@103 {
@@ -96,6 +97,7 @@
 				2016000	1000000
 				2112000	1000000
 				2362000 1100000
+				2516000 1200000
 			>;
 		};
 		big0:cpu@100 {
@@ -112,6 +114,7 @@
 				2016000	1000000
 				2112000	1000000
 				2362000 1100000
+				2516000 1200000
 			>;
 		};
 		big1:cpu@101 {
@@ -128,6 +131,7 @@
 				2016000	1000000
 				2112000	1000000
 				2362000 1100000
+				2516000 1200000
 			>;
 		};
 
@@ -197,12 +201,12 @@
 	support-target {
 		compatible = "hisi,supportedtarget";
 		support_name = "Kirin 650","Kirin 655";
-		support_value = <2112000>, <2362000>;
-		support_efuse = "false";
+		support_value = <2516000>, <2516000>;
+		support_efuse = "true";
 	};
 
 	target-cpu {
 		compatible = "hisi,targetcpu";
-		target_cpu = "Kirin 655";
+		target_cpu = "Kirin 650";
 	};
   };

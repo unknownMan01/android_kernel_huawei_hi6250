@@ -35,7 +35,7 @@
 #include <trace/events/hifreq_hotplug.h>
 
 #define BIG_CLUSTER	1
-#define THRESHOLD_FREQ		2112000
+#define THRESHOLD_FREQ		2516000
 #define REAL_FREQ_INDEX_ADDR	0xFFF0A41CUL
 
 static struct task_struct *hotplug_task;
@@ -594,6 +594,8 @@ void bL_hifreq_hotplug_init(void)
 	data->last_down_time = data->last_up_time;
 
 	/* physical cpu 4&5(logical 6&7) to be hotplugged up and down */
+	cpumask_set_cpu(4, &hotplug_cpumask);
+	cpumask_set_cpu(5, &hotplug_cpumask);
 	cpumask_set_cpu(6, &hotplug_cpumask);
 	cpumask_set_cpu(7, &hotplug_cpumask);
 
